@@ -1,0 +1,30 @@
+footer{
+    padding:1rem;
+    background-color: black;
+}
+
+footer p{
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (min-width:700px){
+    footer{
+        padding:1.2rem;
+    }
+    
+    footer p{
+        font-size:1.2rem;
+    }
+}
+
+@media screen and (min-width:1024px){
+    footer{
+        padding:1.5rem;
+    }
+
+    footer p{
+        font-size: 1.5rem;
+    }
+}

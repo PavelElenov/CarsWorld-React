@@ -1,12 +1,17 @@
 #header{
     background-color: black;
     padding:1rem 0 0 0;
+    border-bottom: 1px solid grey;
 }
 
 .navigation-bar{
     display: none;
     text-align: right;
     padding: 1rem 0 0 0;
+}
+
+.active-navigation-bar{
+    display: block;
 }
 
 .menu{
@@ -63,7 +68,7 @@
     top:8px;
 }
 
-.navigation-bar ul li a:hover{
+.navigation-bar ul li:hover{
     text-decoration: underline;
     transform: scale(1.1);
 }
@@ -99,6 +104,10 @@
         border-radius: 50%;
         padding:3px;
         top:2px;
+    }
+
+    .navigation-bar ul li a i{
+        display: inline;
     }
 }
 
