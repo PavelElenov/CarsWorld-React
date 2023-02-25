@@ -1,0 +1,118 @@
+#header{
+    background-color: black;
+    padding:1rem 0 0 0;
+}
+
+.navigation-bar{
+    display: none;
+    text-align: right;
+    padding: 1rem 0 0 0;
+}
+
+.menu{
+    text-align: right;
+    padding:0 1rem 1rem 0;
+}
+.menu i {
+    color:white;
+    font-size: 2rem;
+}
+
+.navigation-bar ul{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    list-style-type: none;
+}
+
+.cart{
+    display: inline-block;
+    position: relative;
+}
+
+.cart .cart__text{
+    margin-right:3px;
+}
+
+.navigation-bar ul li{
+    background-color: rgb(100, 97, 97);
+    padding:0.8rem;
+}
+
+.navigation-bar ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    font-weight: bold;
+    font-size:1.1rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navigation-bar ul li button{
+    background-color: transparent;
+    border: none;
+}
+
+.navigation-bar ul li i {
+    display: none;
+}
+
+.cart-items{
+    font-size: 0.9rem;
+    position: absolute;
+    top:8px;
+}
+
+.navigation-bar ul li a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+@media screen and (min-width:700px){
+    .navigation-bar{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .navigation-bar ul{
+        flex-direction: row;
+        justify-content: right;
+    }
+
+    .navigation-bar ul li{
+        background-color: transparent;
+    }
+
+    .navigation-bar ul li a{
+        color:rgb(206, 201, 201);
+    }
+
+    .navigation-bar ul li a:hover{
+        color:white;
+    }
+
+    .cart-items{
+        border:1px solid red;
+        border-radius: 50%;
+        padding:3px;
+        top:2px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .navigation-bar ul li a{
+        font-size: 1.35rem;
+    }
+
+    .navigation-bar{
+        padding-right: 1rem;
+    }
+
+    .cart-items{
+        font-size: 1rem;
+        padding:4px;
+    }
+}
