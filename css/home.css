@@ -1,6 +1,6 @@
 /* SLIDESHOW */
 .slideshow-container {
-  max-width: 1350px;
+  max-width: 1300px;
   position: relative;
   height: 25rem;
   margin: 0 auto;
@@ -171,7 +171,7 @@
 
 @media screen and (min-width:1024px){
     .slideshow-container{
-        height: 35rem;
+        height: 30rem;
     }
 
     .text{
@@ -191,8 +191,12 @@
         margin: 0 auto;
     }
 
+    .new-car{
+        height: 25rem;
+    }
+
     .car-info p{
-        font-size:1.4rem;
+        font-size:1.1rem;
     }
 
     .car-info p:nth-child(1){
@@ -200,29 +204,33 @@
     }
 
     .info div h3{
-        font-size:1.1rem;
+        font-size:1.3rem;
     }
 
     .info div a{
-        font-size:1.1rem;
+        font-size:1.2rem;
     }
 }
 
 @media screen and (min-width:1150px){
     .slideshow-container{
-        height: 40rem;
+        height: 35rem;
     }
 }
 
 @media screen and (min-width: 1300px){
     .slideshow-container{
-        height: 45rem;
+        height: 40rem;
     }
 }
 
 @media screen and (min-width: 1440px){
     .new-cars{
         grid-template-columns: repeat(3, 33%);
+    }
+
+    .new-car{
+        width: 330px;
     }
 }
 
