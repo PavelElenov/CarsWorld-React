@@ -1,6 +1,7 @@
 /* SLIDESHOW */
 .slideshow-container {
   width: 100%;
+  max-width: 1350px;
   position: relative;
   height: 25rem;
   /* max-width: 1380px; */
@@ -100,7 +101,6 @@
 }
 
 .new-car{
-    width: 95%;
     max-width: 400px;
     margin: 1rem auto;
     border-radius: 15px;
@@ -110,7 +110,7 @@
 }
 
 .car-img{
-    height: 70%;
+    height: 60%;
 }
 
 .car-info{
@@ -189,10 +189,9 @@
     .new-cars{
         display: grid;
         grid-template-columns: repeat(2, 40%);
-        align-items: center;
         justify-content: center;
+        margin: 0 auto;
     }
-
 
     .car-info p{
         font-size:1.4rem;
@@ -203,11 +202,11 @@
     }
 
     .info div h3{
-        font-size:1.5rem;
+        font-size:1.3rem;
     }
 
     .info div a{
-        font-size:1.2rem;
+        font-size:1.1rem;
     }
 }
 
@@ -226,10 +225,5 @@
 @media screen and (min-width: 1600px){
     .new-cars{
         grid-template-columns: repeat(3, 33%);
-        margin: 0 auto;
-    }
-
-    .slideshow-container{
-        height: 51rem;
     }
 }
