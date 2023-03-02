@@ -214,13 +214,13 @@
 
 @media screen and (min-width:1150px){
     .slideshow-container{
-        height: 35rem;
+        height: 40rem;
     }
 }
 
 @media screen and (min-width: 1300px){
     .slideshow-container{
-        height: 40rem;
+        height: 45rem;
     }
 }
 
