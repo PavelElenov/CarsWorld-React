@@ -238,4 +238,8 @@
     .new-car{
         width: 360px;
     }
+
+    .slideshow-container{
+        max-width: 1350px;
+    }
 }

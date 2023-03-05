@@ -1,167 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>CarsWorld</title>
-    <link rel="icon" href="http://127.0.0.1:8000/static/imges/Calgary_Flames_logo.svg.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      href="http://127.0.0.1:8000/static/imges/Calgary_Flames_logo.svg.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="./scripts/menu.js" defer></script>
     <script src="./scripts/slideShow.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <nav>
-            <div class="menu">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="navigation-bar">
-                <ul>
-                    <li>
-                        <a href="/home">Home</a>
-                    </li>
-                    <li class="item">
-                        <a href="/cars" class="link">
-                            <i class="fa-solid fa-car"></i>
-                            Cars
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="/accessories" class="link">
-                            Accessories
-                        </a>
-                    </li>
-                    <li class="cart">
-                        <a href="/cart">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span class="cart__text">Cart</span>
-                            <span class="cart-items">0</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/profile">
-                            <i class="fa-solid fa-user"></i>
-                            Profile
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navigation-bar">
+          <ul>
+            <li>
+              <a href="/home">Home</a>
+            </li>
+            <li class="item">
+              <a href="/cars" class="link">
+                <i class="fa-solid fa-car"></i>
+                Cars
+              </a>
+            </li>
+            <li class="item">
+              <a href="/accessories" class="link"> Accessories </a>
+            </li>
+            <li class="cart">
+              <a href="/cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart__text">Cart</span>
+                <span class="cart-items">0</span>
+              </a>
+            </li>
+            <li>
+              <a href="/profile">
+                <i class="fa-solid fa-user"></i>
+                Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <div style="height: 0.5rem; background-color: black;"></div>
+    <div style="height: 0.5rem; background-color: black"></div>
     <main>
+      <!-- Home Page -->
+      <div id="home">
         <!-- Slideshow container -->
         <section class="slideshow-container">
-            <div class="slides fade">
-                <div class="overlay"></div>
-                <img src="https://www.auto-data.net/images/f85/BMW-M5-F90-LCI-facelift-2020.jpg">
-                <div class="text">BMW M5 2021</div>
-            </div>
+          <div class="slides fade">
+            <div class="overlay"></div>
+            <img
+              src="https://www.auto-data.net/images/f85/BMW-M5-F90-LCI-facelift-2020.jpg"
+            />
+            <div class="text">BMW M5 2021</div>
+          </div>
 
-            <div class="slides fade">
-                <div class="overlay"></div>
-                <img
-                    src="https://supercars.bg/wp-content/uploads/2022/08/MANSORY-Maybach-S%E2%80%91Class-01-2048x1365.jpg">
-                <div class="text">Mercedes Maybach S-Class</div>
-            </div>
+          <div class="slides fade">
+            <div class="overlay"></div>
+            <img
+              src="https://supercars.bg/wp-content/uploads/2022/08/MANSORY-Maybach-S%E2%80%91Class-01-2048x1365.jpg"
+            />
+            <div class="text">Mercedes Maybach S-Class</div>
+          </div>
 
-            <div class="slides fade">
-                <div class="overlay"></div>
-                <img
-                    src="https://www.auto-data.net/images/f117/Audi-Q8-e-tron-Sportback.jpg">
-                <div class="text">Audi Q8 e-tron</div>
-            </div>
+          <div class="slides fade">
+            <div class="overlay"></div>
+            <img
+              src="https://www.auto-data.net/images/f117/Audi-Q8-e-tron-Sportback.jpg"
+            />
+            <div class="text">Audi Q8 e-tron</div>
+          </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <div style="text-align:center" class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+          <div style="text-align: center" class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         </section>
 
         <!-- New Cars Section -->
         <section class="new-cars">
-            <div class="new-car">
-                <div class="car-img">
-                    <img src="https://www.mercedes-benz.bg/content/bulgaria/bg/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item_539514356.component.damq6.3309904986302.jpg/mercedes-benz-s-class-wv223-teaser-offers-and-services-2730x1536-11-2021.jpg" alt="">
-                </div>
-                <div class="car-info">
-                    <p>S-Class Limousine</p>
-                    <p>Cares for what matters</p>
-                </div>
+          <div class="new-car">
+            <div class="car-img">
+              <img
+                src="https://www.mercedes-benz.bg/content/bulgaria/bg/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item_539514356.component.damq6.3309904986302.jpg/mercedes-benz-s-class-wv223-teaser-offers-and-services-2730x1536-11-2021.jpg"
+                alt=""
+              />
             </div>
-            <div class="new-car">
-                <div class="car-img">
-                    <img src="https://www.mercedes-benz.bg/content/bulgaria/bg/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item_c_1458819270.component.damq6.3267553920231.jpg/home-stage-eqs-v297-2558x1066.jpg" alt="">
-                </div>
-                <div class="car-info">
-                    <p>New EQS</p>
-                    <p>This is for you, world</p>
-                </div>
+            <div class="car-info">
+              <p>S-Class Limousine</p>
+              <p>Cares for what matters</p>
             </div>
-            <div class="new-car">
-                <div class="car-img">
-                    <img src="https://cf-cdn-v5.audi.at/media/ThreeColTeaser_TextImage_Image_Component/19665-paragraphs-559209-342423-image/dh-495-bc764f/18eb1c28/1675149505/egt-2021-2315-oe.jpg" alt="">
-                </div>
-                <div class="car-info">
-                    <p>Audi e-tron GT quattro</p>
-                    <p>Pure sportsmanship
-                        and progressive luxury</p>
-                </div>
+          </div>
+          <div class="new-car">
+            <div class="car-img">
+              <img
+                src="https://www.mercedes-benz.bg/content/bulgaria/bg/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item_c_1458819270.component.damq6.3267553920231.jpg/home-stage-eqs-v297-2558x1066.jpg"
+                alt=""
+              />
             </div>
-            <div class="new-car">
-                <div class="car-img">
-                    <img src="https://cf-cdn-v5.audi.at/media/ThreeColTeaser_TextImage_Image_Component/19665-paragraphs-559209-342421-image/dh-495-bc764f/d30c463f/1675149505/rsegt-2021-2359-oe.jpg" alt="">
-                </div>
-                <div class="car-info">
-                    <p>Audi RS e-tron GT</p>
-                    <p>Clean energy and progressive power</p>
-                </div>
+            <div class="car-info">
+              <p>New EQS</p>
+              <p>This is for you, world</p>
             </div>
-            <div class="new-car">
-                <div class="car-img">
-                    <img src="https://www.mercedes-benz.bg/content/bulgaria/bg/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item.component.damq6.3306860991855.jpg/mercedes-benz-roadster-cabriolet-landingpage-models-sl-roadster-r232-2730x1536-03-2022.jpg" alt="">
-                </div>
-                <div class="car-info">
-                    <p>New AMG SL Roadster</p>
-                    <p>A star is reborn</p>
-                </div>
+          </div>
+          <div class="new-car">
+            <div class="car-img">
+              <img
+                src="https://cf-cdn-v5.audi.at/media/ThreeColTeaser_TextImage_Image_Component/19665-paragraphs-559209-342423-image/dh-495-bc764f/18eb1c28/1675149505/egt-2021-2315-oe.jpg"
+                alt=""
+              />
             </div>
-            <div class="new-car">
-                <div class="car-img">
-                    <img src="https://cf-cdn-v5.audi.at/media/ThreeColTeaser_TextImage_Image_Component/19665-paragraphs-559209-342422-image/dh-495-bc764f/a31671dc/1675149505/q4-2021-2486-oe.jpg" alt="">
-                </div>
-                <div class="car-info">
-                    <p>Audi Q4 e-tron</p>
-                    <p>Think in perspective.
-                        Drive further.</p>
-                </div>
+            <div class="car-info">
+              <p>Audi e-tron GT quattro</p>
+              <p>Pure sportsmanship and progressive luxury</p>
             </div>
+          </div>
+          <div class="new-car">
+            <div class="car-img">
+              <img
+                src="https://cf-cdn-v5.audi.at/media/ThreeColTeaser_TextImage_Image_Component/19665-paragraphs-559209-342421-image/dh-495-bc764f/d30c463f/1675149505/rsegt-2021-2359-oe.jpg"
+                alt=""
+              />
+            </div>
+            <div class="car-info">
+              <p>Audi RS e-tron GT</p>
+              <p>Clean energy and progressive power</p>
+            </div>
+          </div>
+          <div class="new-car">
+            <div class="car-img">
+              <img
+                src="https://www.mercedes-benz.bg/content/bulgaria/bg/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item.component.damq6.3306860991855.jpg/mercedes-benz-roadster-cabriolet-landingpage-models-sl-roadster-r232-2730x1536-03-2022.jpg"
+                alt=""
+              />
+            </div>
+            <div class="car-info">
+              <p>New AMG SL Roadster</p>
+              <p>A star is reborn</p>
+            </div>
+          </div>
+          <div class="new-car">
+            <div class="car-img">
+              <img
+                src="https://cf-cdn-v5.audi.at/media/ThreeColTeaser_TextImage_Image_Component/19665-paragraphs-559209-342422-image/dh-495-bc764f/a31671dc/1675149505/q4-2021-2486-oe.jpg"
+                alt=""
+              />
+            </div>
+            <div class="car-info">
+              <p>Audi Q4 e-tron</p>
+              <p>Think in perspective. Drive further.</p>
+            </div>
+          </div>
         </section>
-
 
         <!-- START INFO SECTION -->
         <section class="info">
-            <div>
-                <h3>ENJOY THE WORLD OF CARS</h3>
-                <button><a href="/cars" class="secondary-btn">CARS</a></button>
-            </div>
+          <div>
+            <h3>ENJOY THE WORLD OF CARS</h3>
+            <button><a href="/cars" class="secondary-btn">CARS</a></button>
+          </div>
         </section>
+      </div>
+
+      <!-- Cars Page -->
+      <div id="cars">
+        <section class="cars-page">
+          <h1 class="cars__header">Нашите автомобили</h1>
+          <p class="choose">Избери марка</p>
+          <div class="cars-content">
+            <div class="brands">
+              <ul>
+                <li>
+                  <span class="active-brand">BMW</span>
+                </li>
+                <li>
+                  <span>Mercedes</span>
+                </li>
+                <li>
+                  <span>Audi</span>
+                </li>
+              </ul>
+            </div>
+            <div class="cars">
+              <div class="bmw active-cars">
+                <div class="car">
+                  <form action="" method="post">
+                    <p class="car_info">Mercedes</p>
+                    <p class="car_info">111111лв.</p>
+                    <p class="car_info"><span>Electrical</span></p>
+                    <div class="car_img">
+                      <img
+                        src="https://images.ams.bg/images/galleries/216382/bmw-seriya-5-2023-1636665662_big.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="buttons">
+                      <button>Add in Cart</button>
+                      <button>Details</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="car">
+                    <form action="" method="post">
+                      <p class="car_info">Mercedes</p>
+                      <p class="car_info">111111лв.</p>
+                      <p class="car_info"><span>Electrical</span></p>
+                      <div class="car_img">
+                        <img
+                          src="https://images.ams.bg/images/galleries/216382/bmw-seriya-5-2023-1636665662_big.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="buttons">
+                        <button>Add in Cart</button>
+                        <button>Details</button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="car">
+                    <form action="" method="post">
+                      <p class="car_info">Mercedes</p>
+                      <p class="car_info">111111лв.</p>
+                      <p class="car_info"><span>Electrical</span></p>
+                      <div class="car_img">
+                        <img
+                          src="https://images.ams.bg/images/galleries/216382/bmw-seriya-5-2023-1636665662_big.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="buttons">
+                        <button>Add in Cart</button>
+                        <button>Details</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+              <div class="mercedes">
+                <div class="car">
+                    <form action="" method="post" class="car">
+                      <p class="car_info">Mercedes</p>
+                      <p class="car_info">111111лв.</p>
+                      <p class="car_info"><span>Electrical</span></p>
+                      <div class="car_img">
+                        <img
+                          src="https://www.mercedes-benz.bg/passengercars/buy/newbrochure/a-class/_jcr_content/swipeableteaserbox/par/swipeableteaser_462510236/asset.MQ6.12.20221215183109.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="div-button">
+                        <button class="third_btn">Add in Cart</button>
+                        <button>Details</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+              <div class="audi">
+                <div class="car">
+                    <form action="" method="post" class="car">
+                      <p class="car_info">Mercedes</p>
+                      <p class="car_info">111111лв.</p>
+                      <p class="car_info"><span>Electrical</span></p>
+                      <div class="car_img">
+                        <img
+                          src="https://cf-cdn-v5.audi.at/media/Theme_Menu_Model_Dropdown_Item_Image_Component/root-bg-model-modelMenu-editableItems-20246-dropdown-413731-image/dh-487-a0e9a6/14357725/1675149545/audi-galerie-5-oe.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="div-button">
+                        <button class="third_btn">Add in Cart</button>
+                        <button>Details</button>
+                      </div>
+                    </form>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>
-        <p>&copy; Pavel Elenov 2023 CarsWorld</p>
+      <p>&copy; Pavel Elenov 2023 CarsWorld</p>
     </footer>
-
-</body>
-
+  </body>
 </html>
