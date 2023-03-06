@@ -1,6 +1,9 @@
 @import url("./header.css");
 @import url("./home.css");
 @import url("./footer.css");
+@import url("./cars.css");
+@import url("./accessories.css");
+@import url("./cart.css");
 
 *{
     border-radius: border-box;
@@ -13,4 +16,26 @@ img{
     height: 100%;
 }
 
+#home{
+    display: none;
+}
+
+#cars{
+    display: none;
+}
+
+#accessories{
+    display: none;
+}
+
+.primary-button{
+    padding: 0.5rem 1rem;
+    border:none;
+    border-radius: 20px;
+    background-color: #cee8f8;
+}
+
+.primary-button:hover{
+    transform: scale(1.1);
+}
 

@@ -1,0 +1,223 @@
+.bmw, .mercedes, .audi{
+    display: none;
+}
+
+.active-cars{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#cars {
+    padding: 1rem;
+    margin-bottom:3rem;
+}
+
+.cars__header{
+    font-size:1.5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom:1.5rem;
+}
+
+.choose{
+    font-size:1.2rem;
+    margin-bottom: 1rem;
+}
+
+.cars-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.brands{
+    padding-bottom: 0.5rem;
+    margin-bottom:1.5rem;
+    border-bottom: 2px solid grey;
+}
+
+.brands ul{
+    display: flex;
+    gap:1rem;
+    list-style-type: none;
+}
+
+.brands ul li span{
+    font-size:1.2rem;
+    cursor:pointer;
+    display: inline-block;
+}
+
+.brands ul li span:hover{
+    transform: scale(1.1);
+}
+
+.active-brand{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.car{
+    width: 250px;
+    margin: 2rem auto;
+}
+
+.car_info{
+    text-align: center;
+}
+
+.car_info:not(:nth-child(3)){
+    margin-bottom: 0.3rem;
+}
+
+.car form .car_info:nth-child(1){
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.car form .car_info:nth-child(2){
+    color:grey;
+    font-size: 1.1rem;
+}
+
+.car_info span{
+    background-color: rgb(172, 166, 166);
+    padding:0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:640px){
+    .car{
+        margin:0;
+        margin-bottom: 1.5rem;
+    }
+
+    .active-cars{
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width:768px){
+    .brands ul{
+        flex-direction: column;
+    }
+
+    .cars-content{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .brands{
+        border-right: 2px solid grey;
+        border-bottom: none;
+        padding: 0 0.5rem 0 0;
+    }
+
+    #cars{
+        padding:1.5rem;
+    }
+}
+
+@media screen and (min-width:1014px){
+    .active-cars{
+        gap:2rem;
+    }
+
+    .brands{
+        padding: 0 2rem 0 0;
+    }
+}
+
+@media screen and (min-width:1180px){
+    .car{
+        width: 300px;
+    }
+
+    .car form .car_info:nth-child(1){
+        font-size:1.5rem;
+    }
+
+    .car form .car_info:nth-child(2){
+        font-size: 1.3rem;
+    }
+
+    .car_info span{
+        font-size: 1.3rem;
+    }
+
+    .buttons button{
+        font-size:1.2rem;
+    }
+
+    .cars__header{
+        font-size:2rem;
+    }
+
+    .choose{
+        font-size: 1.5rem;
+    }
+
+    .brands ul li span{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1250px){
+    #cars{
+        padding: 2rem;
+        margin-bottom: 2.9rem;
+    }
+
+    .brands{
+        padding: 0 2rem 0 0;
+    }
+
+    .car{
+        width:320px;
+    }
+}
+
+@media screen and (min-width:1400px){
+    .car{
+        width: 350px;
+    }
+
+    .active-cars{
+        gap:3rem;
+    }
+
+    .cars__header{
+        font-size: 2.3rem;
+    }
+
+    .car form .car_info:nth-child(1){
+        font-size:1.7rem;
+    }
+}
+
+@media screen and (min-width:1600px){
+    #cars{
+        padding:5rem;
+    }
+
+    .active-cars{
+        gap:4rem;
+    }
+
+    .brands{
+        padding: 0 4rem 0 0;
+    }
+
+    .brands ul{
+        gap:1.5rem;
+    }
+}
+
+/* continue with font-size */
+
+

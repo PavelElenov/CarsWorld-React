@@ -1,0 +1,10 @@
+#cart{
+    height: 100%;
+    background-color: #c9c6c6;
+}
+
+.cart-content{
+    max-width: 1150px;
+    margin:0 auto;
+    background-color: white;
+}

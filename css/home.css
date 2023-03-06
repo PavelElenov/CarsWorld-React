@@ -1,6 +1,6 @@
 /* SLIDESHOW */
 .slideshow-container {
-  max-width: 1300px;
+  max-width: 1250px;
   position: relative;
   height: 22rem;
   margin: 0 auto;
@@ -166,6 +166,7 @@
 
     .new-car{
         height: 23rem;
+        width: 320px;
     }
 }
 @media screen and (min-width:1014px){
@@ -221,7 +222,7 @@
 
 @media screen and (min-width: 1300px){
     .slideshow-container{
-        height: 45rem;
+        height: 43rem;
     }
 }
 
@@ -231,16 +232,24 @@
     }
 
     .new-car{
-        width: 330px;
+        width: 350px;
     }
 
-    .slideshow-container{
-        height: 45rem;
+    .new-cars{
+        margin-bottom:2rem;
+    }
+
+    .info{
+        margin-bottom:2rem;
     }
 }
 
 @media screen and (min-width:1600px){
     .new-car{
         width: 360px;
+    }
+
+    .slideshow-container{
+        max-width: 1350px;
     }
 }
