@@ -20,11 +20,15 @@ img{
     display: none;
 }
 
-#cars{
+/* #cars{
+    display: none;
+} */
+
+#accessories{
     display: none;
 }
 
-#accessories{
+#cart{
     display: none;
 }
 

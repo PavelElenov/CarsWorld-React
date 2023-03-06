@@ -12,6 +12,8 @@
     display:flex;
     flex-wrap: wrap;
     gap:2rem;
+    max-width: 1400px;
+    margin:0 auto;
 }
 
 .accessorie{
@@ -58,6 +60,12 @@
 
     .accessorie-content button{
         font-size:1.1rem;
+    }
+}
+
+@media screen and (min-width:1600px){
+    #accessories{
+        padding:2rem;
     }
 }
 
