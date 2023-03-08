@@ -4,7 +4,172 @@
 }
 
 .cart-content{
-    max-width: 1150px;
+    max-width: 1000px;
     margin:0 auto;
     background-color: white;
+    padding:1rem;
 }
+
+.cart-content__header{
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin-bottom:1rem;
+    border-bottom:2px solid black;
+    padding-bottom:0.5rem;
+}
+
+.item-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.items{
+    margin-bottom:2rem;
+}
+
+.item-info{
+    background-color: rgb(219, 210, 210);
+    border:2px solid black;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.product-information{
+    font-weight: 600;
+}
+
+.item-info p{
+    margin-bottom:0.5rem;
+}
+
+.product-img{
+    width: 85%;
+    margin:0 auto;
+}
+
+.for-price{
+    margin:0.5rem auto;
+}
+
+.for-price tr td{
+    padding:0.2rem;
+}
+
+.for-price tr:last-child td{
+    border-top: 1px solid black;
+}
+
+.total-price{
+    background-color: rgb(196, 189, 189);
+    border:2px solid black;
+    padding:0.5rem;
+    width:200px;
+    height: 170px;
+}
+
+.total-price p:nth-child(1){
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+    margin-bottom:0.5rem;
+}
+
+.total-price p:not(:first-child){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:0.5rem;
+}
+
+.total-price p:not(:first-child) span{
+    font-size: 1.1rem;
+}
+
+.total-price p:not(:first-child) span:first-child{
+    font-weight: bold;
+}
+
+.total-price p:nth-child(3){
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+}
+
+.delivery{
+    color:green;
+}
+
+.total{
+    color:rgb(180, 10, 10);
+}
+
+.total-price .primary-button{
+    border-radius: 5px;
+    padding:0.4rem 0.8rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width:640px){
+    .item-info{
+        display: flex;
+        align-items: center;
+        gap:1rem;
+        padding:1rem;
+    }
+    .product-img{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .item-content{
+        flex-direction: row;
+        gap:1rem;
+    }
+
+    .cart-content__header{
+        padding-bottom: 1rem;
+        font-size:2rem;
+    }
+
+    .item-info{
+        gap:2rem;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .item-info{
+        font-size:1.5rem;
+    }
+
+    .secondary-button{
+        font-size: 1rem;
+    }
+
+    .total-price p:nth-child(1){
+        font-size:1.5rem;
+    }
+
+    .total-price p:not(:first-child) span{
+        font-size: 1.3rem;
+    }
+
+    .total-price .primary-button{
+        font-size:1rem;
+    }
+
+    .total-price{
+        height: 185px;
+        width: 230px;
+    }
+
+}
+
+
+
+
+
+

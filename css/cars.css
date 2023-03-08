@@ -206,7 +206,7 @@
     }
 
     .active-cars{
-        gap:4rem;
+        gap:5rem;
     }
 
     .brands{
@@ -215,5 +215,9 @@
 
     .brands ul{
         gap:1.5rem;
+    }
+
+    .cars__header{
+        font-size:2.5rem;
     }
 }

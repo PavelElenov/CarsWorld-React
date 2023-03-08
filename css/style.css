@@ -20,17 +20,17 @@ img{
     display: none;
 }
 
-/* #cars{
+#cars{
     display: none;
-} */
+}
 
 #accessories{
     display: none;
 }
 
-#cart{
+/* #cart{
     display: none;
-}
+} */
 
 .primary-button{
     padding: 0.5rem 1rem;
@@ -41,4 +41,17 @@ img{
 
 .primary-button:hover{
     transform: scale(1.1);
+}
+
+.secondary-button:hover{
+    transform: scale(1.1);
+}
+
+.secondary-button{
+    padding: 0.3rem 0.6rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: red;
+    color:black;
+    margin-bottom:0.5rem;
 }
