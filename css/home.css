@@ -253,3 +253,9 @@
         max-width: 1350px;
     }
 }
+
+@media screen and (min-width:1800px){
+    .slideshow-container{
+        height: 50rem;
+    }
+}

@@ -16,9 +16,9 @@ img{
     height: 100%;
 }
 
-#home{
+/* #home{
     display: none;
-}
+} */
 
 #cars{
     display: none;
@@ -28,9 +28,9 @@ img{
     display: none;
 }
 
-/* #cart{
+#cart{
     display: none;
-} */
+}
 
 .primary-button{
     padding: 0.5rem 1rem;
