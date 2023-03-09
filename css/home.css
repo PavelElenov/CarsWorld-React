@@ -222,7 +222,7 @@
     }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1400px){
     .new-cars{
         grid-template-columns: repeat(3, 33%);
         margin-bottom:2rem;
@@ -235,8 +235,7 @@
 
 @media screen and (min-width:1600px){
     .new-car{
-        width: 360px;
-        margin: 0 0;
+        width: 330px;
     }
 
     .slideshow-container{

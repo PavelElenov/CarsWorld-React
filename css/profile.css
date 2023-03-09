@@ -98,3 +98,8 @@
     }
 }
 
+@media screen and (min-width:1600px){
+    #profile{
+        padding:8.35rem;
+    }
+}
