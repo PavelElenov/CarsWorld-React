@@ -1,0 +1,100 @@
+:root{
+    --base_margin: 1rem;
+}
+
+#profile{
+    background-color: rgb(249, 246, 246);
+    padding: 3rem;
+}
+
+.profile-info{
+    padding:1rem;
+    max-width: 500px;
+    margin:0 auto;
+    background-color: white;
+    border:1px solid black;
+}
+
+.profile-info p:first-child{
+    font-size:1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom:var(--base_margin);
+}
+
+.add-img{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    margin-bottom: var(--base_margin);
+}
+
+.add-img span{
+    padding:1.5rem;
+    background-color: rgb(196, 187, 187);
+    border-radius: 100%;
+    font-size:1.3rem;
+}
+
+.add-img .primary-button{
+    padding:0.2rem 0.4rem;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.user-data div{
+    background-color: rgb(236, 225, 225);
+    border:1px solid black;
+    margin-bottom: var(--base_margin);
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.user-data span{
+    font-size:0.8rem;
+}
+
+@media screen and (min-width:640px){
+    .profile-info p:first-child{
+        font-size: 1.8rem;
+    }
+
+    .add-img span{
+        font-size:1.5rem;
+    }
+
+    .add-img .primary-button{
+        font-size:1.1rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .user-data span{
+        font-size: 0.9rem;
+    }
+
+    .user-data p{
+        font-size:1.1rem;
+    }
+
+    .buttons .primary-button{
+        font-size:1.1rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .profile-info{
+        padding:2rem;
+    }
+
+    :root{
+        --base_margin: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1440px){
+    #profile{
+        padding:4rem;
+    }
+}
+

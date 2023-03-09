@@ -4,11 +4,13 @@
 @import url("./cars.css");
 @import url("./accessories.css");
 @import url("./cart.css");
+@import url("./profile.css");
 
 *{
     border-radius: border-box;
     padding:0;
     margin:0;
+    object-fit: cover;
 }
 
 img{
@@ -16,9 +18,9 @@ img{
     height: 100%;
 }
 
-/* #home{
+#home{
     display: none;
-} */
+}
 
 #cars{
     display: none;

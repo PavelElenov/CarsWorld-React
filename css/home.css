@@ -193,10 +193,6 @@
         margin: 0 auto;
     }
 
-    .new-car{
-        height: 25rem;
-    }
-
     .car-info p{
         font-size:1.1rem;
     }
@@ -229,13 +225,6 @@
 @media screen and (min-width: 1440px){
     .new-cars{
         grid-template-columns: repeat(3, 33%);
-    }
-
-    .new-car{
-        width: 350px;
-    }
-
-    .new-cars{
         margin-bottom:2rem;
     }
 
@@ -247,6 +236,7 @@
 @media screen and (min-width:1600px){
     .new-car{
         width: 360px;
+        margin: 0 0;
     }
 
     .slideshow-container{
