@@ -167,6 +167,9 @@
 
         <!-- Cars Page -->
         <div id="cars">
+            <!-- If admin -->
+            <button class="add-car primary-button">Add Car +</button>
+
             <section class="cars-page">
                 <h1 class="cars__header">Нашите автомобили</h1>
                 <p class="choose">Избери марка</p>
@@ -507,14 +510,43 @@
                 </div>
                 <div>
                     <label for="">Description:</label>
-                    <textarea name="description" id="description">
-                        The Mercedes Maybach S-Class is a luxury sedan that is designed to provide the ultimate driving
+                    <textarea name="description" id="description" rows="15">
+                    The Mercedes Maybach S-Class is a luxury sedan that is designed to provide the ultimate driving
                     experience for those who appreciate the finer things in life. This vehicle is the epitome of luxury,
                     combining the elegance and sophistication of a Mercedes-Benz with the exclusivity and prestige of
                     the Maybach brand.
                     </textarea>
                 </div>
                 <button class="primary-button">Edit</button>
+            </form>
+        </div>
+
+        <!-- Add-Car Page -->
+        <div id="add-car">
+            <form action="" class="car-edit">
+                <p class="car-edit__header">Create Car</p>
+                <div>
+                    <label for="">Brand:</label>
+                    <input type="text" name="brand">
+                </div>
+                <div>
+                    <label for="">Model:</label>
+                    <input type="text" name="model">
+                </div>
+                <div>
+                    <label for="">Price:</label>
+                    <input type="number" name="price">
+                </div>
+                <div>
+                    <label for="">Img:</label>
+                    <input type="text" name="img">
+                </div>
+                <div>
+                    <label for="">Description:</label>
+                    <textarea name="description" id="description" rows="15" cols="30">
+                    </textarea>
+                </div>
+                <button class="primary-button">Create</button>
             </form>
         </div>
 

@@ -8,6 +8,7 @@
 @import url("./login-register.css");
 @import url("./edit-profile.css");
 @import url("./car-details.css");
+@import url("./car-edit.css");
 
 *{
     border-radius: border-box;
@@ -54,6 +55,10 @@ img{
 }
 
 #car-details{
+    display: none;
+}
+
+#car-edit{
     display: none;
 }
 

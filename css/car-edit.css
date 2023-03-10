@@ -1,0 +1,63 @@
+#car-edit, #add-car{
+    background-color: rgb(249, 246, 246);
+    padding:1rem;
+}
+
+.car-edit{
+    background-color: white;
+    border:1px solid black;
+    border-radius: 5px;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.car-edit__header{
+    text-align: center;
+    font-size:2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding:1rem;
+}
+
+.car-edit div{
+    padding:0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-edit div label{
+    font-size:1.3rem;
+    font-weight: bold;
+}
+
+.car-edit div input{
+    font-size:1rem;
+    padding:0.3rem;
+}
+
+.car-edit .primary-button{
+    display: block;
+    margin: 1rem auto;
+    padding: 0.8rem 3rem;
+    font-size:1rem;
+}
+
+@media screen and (min-width: 1024px){
+    #car-edit, #add-car{
+        padding:3rem;
+    }
+
+    .car-edit .primary-button{
+        font-size:1.5rem;
+    }
+
+    .car-edit__header{
+        font-size: 2.5rem;
+    }
+
+    .car-edit div label{
+        font-size: 1.5rem;
+    }
+    .car-edit div input{
+        font-size: 1.2rem;
+    }
+}

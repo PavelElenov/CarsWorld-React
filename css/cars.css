@@ -5,6 +5,12 @@
 .active-cars{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
+}
+
+.add-car{
+    position: absolute;
+    right: 15px;
 }
 
 #cars {
@@ -206,10 +212,6 @@
 }
 
 @media screen and (min-width:1600px){
-    #cars{
-        padding:5rem;
-    }
-
     .active-cars{
         gap:5rem;
     }
