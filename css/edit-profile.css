@@ -1,0 +1,54 @@
+#edit-profile{
+    background-color: rgb(249, 246, 246);
+    padding: 3rem;
+    height: 71.9vh;
+    position: relative;
+}
+
+.edit-profile{
+    border:1px solid black;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width:350px;
+}
+
+.edit-profile p{
+    text-align: center;
+    font-size:2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0.5rem;
+    border-bottom:1px solid black;
+    padding: 1rem;
+}
+
+.edit-profile .content{
+    padding: 1rem;
+}
+
+.edit-profile .content div{
+    margin-bottom: var(--base_margin);
+}
+
+.edit-profile .content div input{
+    font-size:1.3rem;
+    width: 97%;
+    padding: 0.3rem;
+}
+
+.edit-profile .content .primary-button{
+    width: 100%;
+    font-size:1.5rem;
+}
+
+.edit-profile .content .primary-button:hover{
+    background-color: #2C73D2;
+    color:white;
+    transform: scale(1);
+}
+
+.edit-profile .content div label{
+    font-size:1.3rem;
+}

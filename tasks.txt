@@ -1,5 +1,2 @@
 1.Create js file for cars switching
-2.Details on cars
 3.Admin authorization
-
-FINISH Cart page and profile page

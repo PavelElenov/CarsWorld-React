@@ -6,6 +6,8 @@
 @import url("./cart.css");
 @import url("./profile.css");
 @import url("./login-register.css");
+@import url("./edit-profile.css");
+@import url("./car-details.css");
 
 *{
     border-radius: border-box;
@@ -35,15 +37,23 @@ img{
     display: none;
 }
 
-/* #profile{
+#profile{
     display: none;
-} */
+}
+
+#edit-profile{
+    display: none;
+}
 
 #login{
     display: none;
 }
 
 #register{
+    display: none;
+}
+
+#car-details{
     display: none;
 }
 

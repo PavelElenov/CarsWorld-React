@@ -36,12 +36,6 @@
     font-size:1.3rem;
 }
 
-.add-img .primary-button{
-    padding:0.2rem 0.4rem;
-    border-radius: 5px;
-    height: 40px;
-}
-
 .user-data div{
     background-color: rgb(236, 225, 225);
     border:1px solid black;
@@ -61,11 +55,6 @@
 
     .add-img span{
         font-size:1.5rem;
-    }
-
-    .add-img .primary-button{
-        font-size:1.1rem;
-        padding: 0.3rem 0.6rem;
     }
 
     .user-data span{

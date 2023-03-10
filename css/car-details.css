@@ -1,0 +1,76 @@
+#car-details{
+    background-color: rgb(249, 246, 246);
+    padding:1rem;
+}
+
+.car-content{
+    background-color: white;
+    border:1px solid black;
+    border-radius: 5px;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.car-content__header{
+    text-align: center;
+    padding:0.5rem;
+    font-size:2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: var(--base_margin);
+}
+
+.car-content .img{
+    height: 40%;
+}
+
+.car-content p:not(.car-content__header){
+    font-size:1.5rem;
+    margin-bottom: var(--base_margin);
+}
+
+.car-content .button{
+    display: flex;
+    justify-content: space-between;
+}
+
+.car-content p span{
+    font-weight: bold;
+}
+
+.car-content p:nth-child(6){
+    margin-bottom: 0.3rem;
+}
+
+.buy{
+    text-align: center;
+}
+
+.buy .primary-button{
+    padding:0.8rem 4rem;
+    font-size:1rem;
+}
+
+.car-content .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:1024px){
+    #car-details{
+        padding:2rem;
+    }
+
+    .car-content__header{
+        font-size:2.5rem;
+    }
+
+    .car-content .buttons .primary-button{
+        font-size:1.5rem;
+    }
+
+    .buy .primary-button{
+        font-size:1.5rem;
+    }
+}
+

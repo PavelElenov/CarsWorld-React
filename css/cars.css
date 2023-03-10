@@ -85,9 +85,10 @@
     display: inline-block;
 }
 
-.buttons{
-    display: flex;
-    justify-content: space-between;
+.car button{
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (min-width:640px){
@@ -131,6 +132,10 @@
     .brands{
         padding: 0 2rem 0 0;
     }
+
+    .car button{
+        margin:0;
+    }
 }
 
 @media screen and (min-width:1180px){
@@ -150,7 +155,7 @@
         font-size: 1.3rem;
     }
 
-    .buttons button{
+    button{
         font-size:1.2rem;
     }
 
