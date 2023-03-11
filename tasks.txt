@@ -1,2 +1,1 @@
-1.Create js file for cars switching
-3.Admin authorization
+Create server and build application with React

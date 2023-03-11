@@ -22,46 +22,6 @@ img{
     height: 100%;
 }
 
-#home{
-    display: none;
-}
-
-#cars{
-    display: none;
-}
-
-#accessories{
-    display: none;
-}
-
-#cart{
-    display: none;
-}
-
-#profile{
-    display: none;
-}
-
-#edit-profile{
-    display: none;
-}
-
-#login{
-    display: none;
-}
-
-#register{
-    display: none;
-}
-
-#car-details{
-    display: none;
-}
-
-#car-edit{
-    display: none;
-}
-
 .primary-button{
     padding: 0.5rem 1rem;
     border:none;

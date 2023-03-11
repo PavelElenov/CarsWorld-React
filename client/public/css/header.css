@@ -73,6 +73,11 @@
     transform: scale(1.1);
 }
 
+.link i{
+    margin-right: 0.4rem;
+    display: inline-block;
+}
+
 @media screen and (min-width:700px){
     .navigation-bar{
         display: block;
