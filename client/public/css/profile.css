@@ -48,6 +48,11 @@
     font-size:0.8rem;
 }
 
+.profile-info .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
 @media screen and (min-width:640px){
     .profile-info p:first-child{
         font-size: 1.8rem;
@@ -62,11 +67,11 @@
     }
 
     .user-data p{
-        font-size:1.1rem;
+        font-size:1.3rem;
     }
 
     .buttons .primary-button{
-        font-size:1.1rem;
+        font-size:1.2rem;
         border-radius: 8px;
     }
 }
@@ -89,6 +94,6 @@
 
 @media screen and (min-width:1600px){
     #profile{
-        padding:8.35rem;
+        padding:8.3rem;
     }
 }

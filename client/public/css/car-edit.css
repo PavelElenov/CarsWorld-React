@@ -57,7 +57,12 @@
     .car-edit div label{
         font-size: 1.5rem;
     }
+
     .car-edit div input{
         font-size: 1.2rem;
+    }
+
+    .car-content{
+        padding:1.5rem;
     }
 }

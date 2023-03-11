@@ -72,7 +72,7 @@
 .login-register-form .content .primary-button{
     font-size:1.3rem;
     margin-bottom: var(--base_margin);
-    width:100%;
+    width:92%;
 }
 
 .login-register-form .content .primary-button:hover{
@@ -86,12 +86,14 @@
     font-size:1.2rem;
 }
 
-.login-register-form .content p span{
+.login-register-form .content p a{
     color:#00C9A7;
     cursor: pointer;
+    text-decoration: none;
+    margin-left: 0.3rem;
 }
 
-.login-register-form .content p span:hover{
+.login-register-form .content p a:hover{
     transform: scale(1.1);
     display: inline-block;
 }

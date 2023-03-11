@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 const Cars = () => {
     return (
         <div id="cars">
             {/* If admin */}
-            <button className="add-car primary-button">Add Car +</button>
+            <Link to="/add-car" className="add-car primary-button">Add Car +</Link>
             <section className="cars-page">
-                <h1 className="cars__header">Нашите автомобили</h1>
-                <p className="choose">Избери марка</p>
+                <h1 className="cars__header">Our cars</h1>
+                <p className="choose">Choose Brand</p>
                 <div className="cars-content">
                     <div className="brands">
                         <ul>
@@ -30,25 +32,9 @@ const Cars = () => {
                                     <img src="https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXq0WFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyStsd2HtcUfpOyXGEuTRJ0l3OtOB2q8%25bApRiwI5ux6YQC30MrkzNHTnm7j871hKVi%25Q%25vq4ylyLRsGHYaxU0drH1Gm%25n8w7OnoiZKiEM4FvRwTg9LYn6PDarDSeWHtItsd8cTcUfiXyXGE45mJ0ldItOB2fMqbAp7AbI5uKMTQmIJwF1kl6PDLkoSeWv3M4kWCNTg7o0j6PS6WVSeth7qtsc%25XRcUXnvxXrL%25ejFzAv1LOfvO4lGE10UPbb5HF8B308wuiHvTvEUEksYnQPmsOCb8V08&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=300" alt="img" />
                                 </div>
                                 {/* If user is loged */}
-                                <button className="primary-button">Details</button>
-                            </div>
-                            <div className="car">
-                                <p className="car_info">Mercedes</p>
-                                <p className="car_info">111111лв.</p>
-                                <p className="car_info"><span>Electrical</span></p>
-                                <div className="car_img">
-                                    <img src="https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXq0WFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyStsd2HtcUfpOyXGEuTRJ0l3OtOB2q8%25bApRiwI5ux6YQC30MrkzNHTnm7j871hKVi%25Q%25vq4ylyLRsGHYaxU0drH1Gm%25n8w7OnoiZKiEM4FvRwTg9LYn6PDarDSeWHtItsd8cTcUfiXyXGE45mJ0ldItOB2fMqbAp7AbI5uKMTQmIJwF1kl6PDLkoSeWv3M4kWCNTg7o0j6PS6WVSeth7qtsc%25XRcUXnvxXrL%25ejFzAv1LOfvO4lGE10UPbb5HF8B308wuiHvTvEUEksYnQPmsOCb8V08&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=300" alt="img"/>
+                                <div>
+                                    <Link to="/details/1" className="primary-button">Details</Link>
                                 </div>
-                                <button className="primary-button">Details</button>
-                            </div>
-                            <div className="car">
-                                <p className="car_info">Mercedes</p>
-                                <p className="car_info">111111лв.</p>
-                                <p className="car_info"><span>Electrical</span></p>
-                                <div className="car_img">
-                                    <img src="https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXq0WFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyStsd2HtcUfpOyXGEuTRJ0l3OtOB2q8%25bApRiwI5ux6YQC30MrkzNHTnm7j871hKVi%25Q%25vq4ylyLRsGHYaxU0drH1Gm%25n8w7OnoiZKiEM4FvRwTg9LYn6PDarDSeWHtItsd8cTcUfiXyXGE45mJ0ldItOB2fMqbAp7AbI5uKMTQmIJwF1kl6PDLkoSeWv3M4kWCNTg7o0j6PS6WVSeth7qtsc%25XRcUXnvxXrL%25ejFzAv1LOfvO4lGE10UPbb5HF8B308wuiHvTvEUEksYnQPmsOCb8V08&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=300" alt="" />
-                                </div>
-                                <button className="primary-button">Details</button>
                             </div>
                         </div>
                         <div className="mercedes">

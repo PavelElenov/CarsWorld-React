@@ -22,11 +22,17 @@ img{
     height: 100%;
 }
 
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
 .primary-button{
     padding: 0.5rem 1rem;
     border:none;
     border-radius: 20px;
     background-color: #cee8f8;
+    color:black;
 }
 
 .primary-button:hover{

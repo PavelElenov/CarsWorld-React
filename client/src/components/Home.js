@@ -1,33 +1,66 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+    let slideIndex = 1;
+    
+    useEffect(() => {
+        showSlides(slideIndex);
+    }, []);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
     return (
-        <div id="home">
+        <div>
             <section className="slideshow-container">
                 <div className="slides fade">
                     <div className="overlay" />
-                    <img src="https://www.auto-data.net/images/f85/BMW-M5-F90-LCI-facelift-2020.jpg" alt="img"/>
+                    <img src="https://www.auto-data.net/images/f85/BMW-M5-F90-LCI-facelift-2020.jpg" alt="img" />
                     <div className="text">BMW M5 2021</div>
                 </div>
                 <div className="slides fade">
                     <div className="overlay" />
-                    <img src="https://supercars.bg/wp-content/uploads/2022/08/MANSORY-Maybach-S%E2%80%91Class-01-2048x1365.jpg" alt="img"/>
+                    <img src="https://supercars.bg/wp-content/uploads/2022/08/MANSORY-Maybach-S%E2%80%91Class-01-2048x1365.jpg" alt="img" />
                     <div className="text">Mercedes Maybach S-Class</div>
                 </div>
                 <div className="slides fade">
                     <div className="overlay" />
-                    <img src="https://www.auto-data.net/images/f117/Audi-Q8-e-tron-Sportback.jpg" alt="img"/>
+                    <img src="https://www.auto-data.net/images/f117/Audi-Q8-e-tron-Sportback.jpg" alt="img" />
                     <div className="text">Audi Q8 e-tron</div>
                 </div>
-                <span className="prev" onClick="plusSlides(-1)">&lt;</span>
-                <span className="next" onClick="plusSlides(1)">&gt;</span>
+                <span className="prev" onClick={() => plusSlides(-1)}>&#10094;</span>
+                <span className="next" onClick={() =>plusSlides(1)}>&#10095;</span>
                 <div className="dots">
-                    <span className="dot" onClick="currentSlide(1)" />
-                    <span className="dot" onClick="currentSlide(2)" />
-                    <span className="dot" onClick="currentSlide(3)" />
+                    <span className="dot" onClick={() => currentSlide(1)} />
+                    <span className="dot" onClick={() => currentSlide(2)} />
+                    <span className="dot" onClick={() => currentSlide(3)} />
                 </div>
             </section>
-            
+
             <section className="new-cars">
                 <div className="new-car">
                     <div className="car-img">
@@ -84,14 +117,13 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            
+
             <section className="info">
                 <div>
                     <h3>ENJOY THE WORLD OF CARS</h3>
                     <button><Link to="/cars" className="secondary-btn">CARS</Link></button>
                 </div>
             </section>
-            
         </div>
     );
 };

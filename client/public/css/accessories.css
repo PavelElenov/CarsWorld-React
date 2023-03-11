@@ -39,6 +39,10 @@
     font-size:1.3rem;
 }
 
+.accessorie-content .primary-button{
+    padding: 0.5rem 2rem;
+}
+
 @media screen and (min-width:700px){
     .accessorie{
         margin:0;
