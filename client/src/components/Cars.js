@@ -4,7 +4,7 @@ const Cars = () => {
     return (
         <div id="cars">
             {/* If admin */}
-            <Link to="/add-car" className="add-car primary-button">Add Car +</Link>
+            <Link to="/add-car" className="add primary-button">Add Car +</Link>
             <section className="cars-page">
                 <h1 className="cars__header">Our cars</h1>
                 <p className="choose">Choose Brand</p>

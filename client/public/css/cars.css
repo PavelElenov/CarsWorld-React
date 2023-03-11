@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.add-car{
+.add{
     position: absolute;
     right: 15px;
 }
@@ -206,6 +206,10 @@
 
     .car .car_info:nth-child(1){
         font-size:1.7rem;
+    }
+
+    .add{
+        font-size:1.2rem;
     }
 }
 

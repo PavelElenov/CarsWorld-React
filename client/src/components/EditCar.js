@@ -1,8 +1,8 @@
 const EditCar = () => {
     return (
-        <div id="car-edit">
-            <form action className="car-edit">
-                <p className="car-edit__header">Edit Car</p>
+        <div className="forms-content">
+            <form >
+                <p>Edit Car</p>
                 <div>
                     <label htmlFor>Brand:</label>
                     <input type="text" name="brand" defaultValue="Mercedes" />

@@ -8,7 +8,7 @@
 @import url("./login-register.css");
 @import url("./edit-profile.css");
 @import url("./car-details.css");
-@import url("./car-edit.css");
+@import url("./forms.css");
 
 *{
     border-radius: border-box;
@@ -50,4 +50,17 @@ a{
     background-color: red;
     color:black;
     margin-bottom:0.5rem;
+}
+
+.accessorie-forms{
+    height: 72.75vh;
+    position: relative;
+}
+
+.accessorie-forms form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:1rem;
 }

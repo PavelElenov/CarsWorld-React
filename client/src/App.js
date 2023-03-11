@@ -14,6 +14,8 @@ import Details from "./components/Details";
 import EditCar from "./components/EditCar";
 import AddCar from "./components/AddCar";
 import EditProfile from "./components/EditProfile";
+import AddAccessorie from "./components/AddAccessorie";
+import EditAccessorie from "./components/EditAccessorie";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
         <Route path="/edit-car/:id" element={<EditCar />}/>
         <Route path="/add-car" element={<AddCar />} />
         <Route path="/edit-profile/:id" element={<EditProfile />} />
+        <Route path="/add-accessorie" element={<AddAccessorie />} />
+        <Route path="/edit-accessorie/:id" element={<EditAccessorie />} />
       </Routes>
 
       <Footer />

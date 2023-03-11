@@ -26,7 +26,10 @@ const Header = () => {
                 <div className="navigation-bar">
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/" className="link">
+                            <i class="fa-solid fa-house"></i>
+                                Home
+                            </Link>
                         </li>
                         <li className="item">
                             <Link to="/cars" className="link">
@@ -45,7 +48,7 @@ const Header = () => {
                                 <span className="cart-items">0</span>
                             </Link>
                         </li>
-                        
+
                         <li>
                             <Link to="/profile" className="link">
                                 <i className="fa-solid fa-user" />

@@ -1,9 +1,9 @@
-#car-edit, #add-car{
+.forms-content{
     background-color: rgb(249, 246, 246);
     padding:1rem;
 }
 
-.car-edit{
+.forms-content form{
     background-color: white;
     border:1px solid black;
     border-radius: 5px;
@@ -11,30 +11,30 @@
     margin: 0 auto;
 }
 
-.car-edit__header{
+.forms-content form p{
     text-align: center;
     font-size:2rem;
     font-family: 'Montserrat', sans-serif;
     padding:1rem;
 }
 
-.car-edit div{
+.forms-content form div{
     padding:0.5rem 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.car-edit div label{
+.forms-content form div label{
     font-size:1.3rem;
     font-weight: bold;
 }
 
-.car-edit div input{
+.forms-content form div input{
     font-size:1rem;
     padding:0.3rem;
 }
 
-.car-edit .primary-button{
+.forms-content form .primary-button{
     display: block;
     margin: 1rem auto;
     padding: 0.8rem 3rem;
@@ -42,27 +42,23 @@
 }
 
 @media screen and (min-width: 1024px){
-    #car-edit, #add-car{
+    .forms-content{
         padding:3rem;
     }
 
-    .car-edit .primary-button{
+    .forms-content form .primary-button{
         font-size:1.5rem;
     }
 
-    .car-edit__header{
+    .forms-content form p{
         font-size: 2.5rem;
     }
 
-    .car-edit div label{
+    .forms-content form div label{
         font-size: 1.5rem;
     }
 
-    .car-edit div input{
+    .forms-content form div input{
         font-size: 1.2rem;
-    }
-
-    .car-content{
-        padding:1.5rem;
     }
 }
