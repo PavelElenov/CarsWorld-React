@@ -5,7 +5,7 @@ const Cart = () => {
                 {/* If have items */}
                 <p className="cart-content__header">Your cart (1 product)</p>
                 {/* If don't have items */}
-                {/* <p class="cart-content__header">Your cart is empty</p> */}
+                {/* <p className="cart-content__header">Your cart is empty</p> */}
                 <div className="item-content">
                     <div className="items">
                         <div className="item-info">

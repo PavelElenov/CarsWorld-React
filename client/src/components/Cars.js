@@ -1,10 +1,25 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../contexts/UserContext";
 
 const Cars = () => {
+    const { user } = useContext(UserContext);
+
+    const changeBrands = (e, brandName) => {
+        const span = document.getElementsByClassName("active-brand")[0];
+        span.className = "";
+        e.target.className = "active-brand";
+
+        const div = document.querySelector(".active-cars");
+        div.className = div.className.replace(" active-cars", "");
+
+        document.querySelector(`.${brandName}`).className += " active-cars";
+    }
+
     return (
         <div id="cars">
-            {/* If admin */}
-            <Link to="/add-car" className="add primary-button">Add Car +</Link>
+            {user && user.isAdmin && <Link to="/add-car" className="add primary-button">Add Car +</Link>}
+
             <section className="cars-page">
                 <h1 className="cars__header">Our cars</h1>
                 <p className="choose">Choose Brand</p>
@@ -12,13 +27,13 @@ const Cars = () => {
                     <div className="brands">
                         <ul>
                             <li>
-                                <span className="active-brand">BMW</span>
+                                <span className="active-brand" onClick={(e) => changeBrands(e, 'bmw')}>BMW</span>
                             </li>
                             <li>
-                                <span>Mercedes</span>
+                                <span onClick={(e) => changeBrands(e, 'mercedes')}>Mercedes</span>
                             </li>
                             <li>
-                                <span>Audi</span>
+                                <span onClick={(e) => changeBrands(e, 'audi')}>Audi</span>
                             </li>
                         </ul>
                     </div>
@@ -29,12 +44,14 @@ const Cars = () => {
                                 <p className="car_info">111111лв.</p>
                                 <p className="car_info"><span>Electrical</span></p>
                                 <div className="car_img">
-                                    <img src="https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXq0WFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyStsd2HtcUfpOyXGEuTRJ0l3OtOB2q8%25bApRiwI5ux6YQC30MrkzNHTnm7j871hKVi%25Q%25vq4ylyLRsGHYaxU0drH1Gm%25n8w7OnoiZKiEM4FvRwTg9LYn6PDarDSeWHtItsd8cTcUfiXyXGE45mJ0ldItOB2fMqbAp7AbI5uKMTQmIJwF1kl6PDLkoSeWv3M4kWCNTg7o0j6PS6WVSeth7qtsc%25XRcUXnvxXrL%25ejFzAv1LOfvO4lGE10UPbb5HF8B308wuiHvTvEUEksYnQPmsOCb8V08&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=300" alt="img" />
+                                    <img src="https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6Jia10tLhu1XzWVo7puMLWFmdkAj5DOPFtEBZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giTLNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYVpHWh1DMztIAzeqVYDafaOojmztYRSJdw67aftxdTUDw1RSfWQlUY%25VxdSeZs3muzWQdjc0kN3aeZQ6KAn6XRjcZwBO5zrx6Kc%252yG84WwBKupC3PFe%252B3iEzIIjup2XHNaWv63iprJ8yrGwXHi4TPFR9%25rJHFlMILou4TJIsDTpL3FlTv0YlHyXIslGAtW4Crv0s9OfJEE4GA0ogS6kNF9OALUdwLkIogOybQVunvLUgChZz45GybUEqczZ89ChbNmKQWPoEqhk7bfDMLNmqn1hmGDyk7m5Vqz9YCn178zmaftE5V1Pa7IsfN8zVMR1KMSkPazDxVBidnMRaYWz2%25Q5DxRteaEzZ8YWxfjRNfcPteWS6xkpKMfjedwHC5BDS6jQ%25JNp2Ydw6ZuTlcptQ%25wc3lsDifZu%25KXs0mHSc3uBr0ClJdKX324AkETQBrXpFOhDlZ24riIg6gscpF4HviR30KiIFJGHXXABHvIT9JxOO2JGvloTQigpT9GsLlZ0Ui591WmyGZI6ao5NF14ivAj0%25lJfV" alt="img" />
                                 </div>
-                                {/* If user is loged */}
-                                <div>
-                                    <Link to="/details/1" className="primary-button">Details</Link>
-                                </div>
+
+                                {user &&
+                                    <div>
+                                        <Link to="/details/1" className="primary-button">Details</Link>
+                                    </div>}
+
                             </div>
                         </div>
                         <div className="mercedes">
@@ -44,12 +61,12 @@ const Cars = () => {
                                     <p className="car_info">111111лв.</p>
                                     <p className="car_info"><span>Electrical</span></p>
                                     <div className="car_img">
-                                        <img src="https://www.mercedes-benz.bg/passengercars/buy/newbrochure/a-class/_jcr_content/swipeableteaserbox/par/swipeableteaser_462510236/asset.MQ6.12.20221215183109.jpeg" alt="" />
+                                        <img src="https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqbSFqtyO67PobzIr3eWsrrCsdRRzwQZgk4ZbMw3SGtGyStsd2vtcUfp8cXGEubYJ0l36xOB2NS5bApjIXI5uVKDQC31MOkzNwPnm7jZeDhKVFXM%25vqCtTyLRzcmYax7aYrH1KC%25n8wvzxoiZL7IM4FaSjTg9Hhn6PD8%256SeWAmItsd5J3cUfCOcXGEz9mJ0l7DtOB2KbcbApvI9I5uO5qQC3ig7kzN4PZm7jgGDhKVBSh%25vqAv9yLR5nDYaxCNqrH1zm1n8w7hxoiZKMXM4FvTrTg9L6k6PDaGbSeWH09tsd9JTcUfA%25qXGE5YrJbXSqxVOWn8wzOyoiZClYaOJs2rHyOqpn85kZuoiMoi3M4TM9NTg6kCj6PSyzVS%257k4u1AGzq7cDzbH7eWqsPiXX0v1LU2sLRlavznzWPWbghyOiIgcBXL3sL&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=300" alt="" />
                                     </div>
-                                    <div className="div-button">
-                                        <button className="third_btn">Add in Cart</button>
-                                        <button>Details</button>
-                                    </div>
+                                    {user &&
+                                        <div>
+                                            <Link to="/details/1" className="primary-button">Details</Link>
+                                        </div>}
                                 </form>
                             </div>
                         </div>
@@ -60,12 +77,12 @@ const Cars = () => {
                                     <p className="car_info">111111лв.</p>
                                     <p className="car_info"><span>Electrical</span></p>
                                     <div className="car_img">
-                                        <img src="https://cf-cdn-v5.audi.at/media/Theme_Menu_Model_Dropdown_Item_Image_Component/root-bg-model-modelMenu-editableItems-20246-dropdown-413731-image/dh-487-a0e9a6/14357725/1675149545/audi-galerie-5-oe.jpg" alt="" />
+                                        <img src="https://cdn.nwi-ms.com/media/bg/A/comm/A20220232832/model/front.jpg?size=S&flags=transparent" alt="" />
                                     </div>
-                                    <div className="div-button">
-                                        <button className="third_btn">Add in Cart</button>
-                                        <button>Details</button>
-                                    </div>
+                                    {user &&
+                                        <div>
+                                            <Link to="/details/1" className="primary-button">Details</Link>
+                                        </div>}
                                 </form>
                             </div>
                         </div>

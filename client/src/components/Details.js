@@ -22,8 +22,8 @@ const Details = () => {
                     <button className="primary-button">Delete</button>
                 </div>
                 {/* Else */}
-                {/* <div class="buy">
-                    <button class="primary-button">Buy</button>
+                {/* <div className="buy">
+                    <button className="primary-button">Buy</button>
                 </div> */}
             </div>
         </div>

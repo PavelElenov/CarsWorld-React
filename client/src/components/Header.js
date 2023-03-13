@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { UserContext } from "../contexts/UserContext";
+import { Fragment } from "react";
 
 const Header = () => {
+
+    const { user } = useContext(UserContext);
 
     function onMenuClick() {
         console.log('HI');
@@ -27,7 +32,7 @@ const Header = () => {
                     <ul>
                         <li>
                             <Link to="/" className="link">
-                            <i class="fa-solid fa-house"></i>
+                                <i className="fa-solid fa-house"></i>
                                 Home
                             </Link>
                         </li>
@@ -40,29 +45,34 @@ const Header = () => {
                         <li className="item">
                             <Link to="/accessories" className="link"> Accessories </Link>
                         </li>
-                        {/* If user is loged */}
-                        <li className="cart">
-                            <Link to="/cart" className="link">
-                                <i className="fa-solid fa-cart-shopping" />
-                                <span className="cart__text">Cart</span>
-                                <span className="cart-items">0</span>
-                            </Link>
-                        </li>
+    
+                        {user ?
+                            <Fragment>
+                                <li className="cart">
+                                    <Link to="/cart" className="link">
+                                        <i className="fa-solid fa-cart-shopping" />
+                                        <span className="cart__text">Cart</span>
+                                        <span className="cart-items">0</span>
+                                    </Link>
+                                </li>
 
-                        <li>
-                            <Link to="/profile" className="link">
-                                <i className="fa-solid fa-user" />
-                                Profile
-                            </Link>
-                        </li>
-
-                        {/* Else */}
-                        {/* <li>
-                            <Link to="/login">Login</Link>
-                        </li>
-                        <li>
-                            <Link to="/register">Register</Link>
-                        </li> */}
+                                <li>
+                                    <Link to="/profile" className="link">
+                                        <i className="fa-solid fa-user" />
+                                        Profile
+                                    </Link>
+                                </li>
+                            </Fragment>
+                            :
+                            <Fragment>
+                                <li>
+                                    <Link to="/login">Login</Link>
+                                </li>
+                                <li>
+                                    <Link to="/register">Register</Link>
+                                </li>
+                            </Fragment>
+                        }
                     </ul>
                 </div>
             </nav>

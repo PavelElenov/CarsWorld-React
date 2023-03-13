@@ -1,1 +1,2 @@
-Create server and build application with React
+Create database and fill cars and accessories - false
+
