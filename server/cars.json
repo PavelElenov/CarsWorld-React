@@ -1,0 +1,146 @@
+[
+    {
+        "brand": "Mercedes",
+        "model": "A-class Limousine",
+        "engineType": "Hybrid",
+        "price": "77060",
+        "img": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXq5SFqtyO67PobzIr3eWsrrCsdRRzwQZxkIZbMw3SGtGyStsd2sDcUfp8qXGEubXJ0l3okOB2qM%25bApvnRI5uL5qQC3ag2kzNHmwm7jQ63hKVk0Q%25vqeBDyLRsSmYaxCXYrH1zmrn8wPbIoTnylpEMRQC3PsXkzN5%256m7jCcShKVvKQ%25vqLUkyLRaOXYaxHNhrHAlGqhTWFEnlA9BiZ81JnwxV449pTuZkwuoQ3pE7EJxJeRB5PVsRiD4u%25wu&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=400",
+        "description": "The Mercedes A-Class Limousine is a compact executive sedan produced by the German automaker Mercedes-Benz."
+    },
+    {
+        "brand": "Mercedes",
+        "model": "C-class Limousine",
+        "engineType": "Hybrid",
+        "price": "94490",
+        "img": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNWFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyStsd2sDcUfp8qXGEubYJ0l3OZOB2qrubApRARI5ux4YQC31SrkzNHTwm7j8hZhKVi%25E%25vq4yZyLRhAmYaxUbprH1Gm%25n8w7OnoiZKq1M4FvyMTg9LUO6PDGmhSc6o3jutZ%25vqBJ9yLR0OEYaxv0JrH1LCtn8waV2oiZ3LQM4FgCrTg9Pze6PDe7mSeWsaWtsLV79MOuljcVGDtyjUdhcfWF002ROxEnfxXr1RjijhWh5DvaAFCDGp0xTfx&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=400",
+        "description": "The car is equipped with a 9-speed automatic transmission. The C-Class Limousine has a luxurious interior, with a large digital instrument cluster, a touchscreen infotainment"
+    },
+    {
+        "brand": "Mercedes",
+        "model": "S-class Limousine",
+        "engineType": "Hybrid",
+        "price": "241370",
+        "img": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXq0WFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyStsd2HtcUfpOyXGEuTRJ0l3OtOB2q8%25bApRiwI5ux6YQC30MrkzNHTnm7j871hKVi%25Q%25vq4ylyLRsGHYaxU0drH1Gm%25n8w7OnoiZKiEM4FvRwTg9LYn6PDarDSeWHtItsd8cTcUfiXyXGE45mJ0ldItOB2fMqbAp7AbI5uKMTQmIJwF1kl6PDLkoSeWv3M4kWCNTg7o0j6PS6WVSeth7qtsc%25XRcUXnvxXrL%25ejFzAv1LOfvO4lGE10UPbb5HF8B308wuiHvTvEUEksYnQPmsOCb8V08&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=400",
+        "description": "The S-Class Limousine has a sleek and elegant exterior design, with a long hood, a wide grille, and LED headlights.The S-Class Limousine has a wheelbase of 124.6 inches and an overall length of 214.7 inches. It is 75.3 inches wide and 59.3 inches"
+    },
+    {
+        "brand": "Mercedes",
+        "model": "EQC SUV",
+        "engineType": "Electrical",
+        "price": "145350",
+        "img": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXqNEFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtle9tsd2HVcUfpOyXGEjyYJ0lVYpOB2sQ5bApvnRI5uL5IQC3asWkzNIPum7jQyIhKVPsh%25vqeIkyLR5cyYaxCkYrH1zmin8w7h3oiZKeEM4FsQkTSMrp3261m7jG2DhKVUXd%25vq7UcyLRKA6YaxvoxrH1LMOn8waV2oiZ3HfM4FgCuTg9Pze6PDeLNSeWstMtsLV79MOuljcVGXjJYidhcfWF002ROxEnfxXr1RjijhWh5DvaAFCDGp0xTfx&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=400",
+        "description": "The EQC can accelerate from 0 to 60 mph in 4.8 seconds and has a top speed of 112 mph.The EQC can be charged using a standard 110V or 240V outlet, or using a DC fast charger that can charge the battery from 10% to 80% in around 40 minutes."
+    },
+    {
+        "brand": "Mercedes",
+        "model": "G-class",
+        "engineType": "Gasoline",
+        "price": "241590",
+        "img": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXq0WFqtyO67PobzIr3eWsrrCsdRRzwQZYVHZbMw3SGtGyStsdAYtcUfAyYXOc6VRjJDrH1Z4in8wF%25foiZ9yXM4FDVMTg9Wb96PDdsqSeWfU9tsdFoVcUf9ykXGEDsSJ0lWUfOB2Q81bApkMoI5um%25xQC34krkzN5Tbm7jCODhKVM0F%25vqEQjyLR%25y6YaxEbprH1lb%25n8w2%25boiZptoM4FZyrTg9Szn6PKNCZnX2f3SNYL3vGHDkSW9wUUEVXqdYWqtyRV3H3k9kBF7v0wAFslUqoWq&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=400",
+        "description": "The G-Class has a boxy, rugged exterior design that is instantly recognizable. It has a high ground clearance and a reinforced body, which make it a capable off-road vehicle.The car is equipped with a 9-speed automatic transmission."
+    },
+    {
+        "brand": "Mercedes",
+        "model": "Mercedes-Maybach GLS",
+        "engineType": "Gasoline",
+        "price": "318255",
+        "img": "https://assets.oneweb.mercedes-benz.com/iris/iris.jpg?COSY-EU-100-1713d0VXq4EFqtyO67PobzIr3eWsrrCsdRRzwQZQ9vZbMw3SGtGyStsd2HtcUfp8qXGEui2J0l3ItOB2NQnbApjdCI5uVcZQC3qvWkzNwTdm7jZaShKV5SM%25vqCtkyLRzLyYax758rH1KCun8wvT3oiZLkYM4FamMTg9HxT6PD8SmSeWAmutsd5hQcUfCUcXGEzbXJ0l7OhOB2KbcbApvI9I5uO5qQC3bgpkzNI%25bm7jgeFhKVP0W%25vqAt%25yLR5LDYaxCoWrH1zm1n8w7h4oiZKMIM4FvslTg9LUV6PDZkbSeWFmMtsd9htcUfAU0XGE5YrJbXSqxVOWn8wzzcoiZC7lM4F84jTg9ix96PDV16SeWsmItsdUsTcUfG8WXGE09wJ08xLdSQjuROx84H7lBlYO2EW553wQZpT2ZbMFwRPRYEY7fHizWKfAN5Zt2Z&imgt=P27&bkgnd=9&pov=BE040&uni=cs&im=Crop,rect=(0,-25,1370,770),gravity=Center;Resize,width=400",
+        "description": "The Mercedes-Maybach GLS is a luxurious SUV that offers a combination of exquisite design, advanced technology, and exceptional performance. As the first-ever SUV from the Maybach brand, this vehicle offers a unique and elevated driving experience for those who value style, comfort, and power."
+    },
+    {
+        "brand": "BMW",
+        "model": "BMW M2 Coupe",
+        "engineType": "Gasoline",
+        "price": "137300",
+        "img": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6Jia10tLhu1XzWVo7puMLWFmdkAj5DOPFtEBZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giTLNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYVpHWh1DMztIAzeqVYDafaOojmztYRSJdw67aftxdTUDw1RSfWQlUY%25VxdSeZs3muzWQdjc0kN3aeZQ6KAn6XRjcZwBO5zrx6Kc%252yG84WwBKupC3PFe%252B3iEzIIjup2XHNaWv63iprJ8yrGwXHi4TPFR9%25rJHFlMILou4TJIsDTpL3FlTv0YlHyXIslGAtW4Crv0s9OfJEE4GA0ogS6kNF9OALUdwLkIogOybQVunvLUgChZz45GybUEqczZ89ChbNmKQWPoEqhk7bfDMLNmqn1hmGDyk7m5Vqz9YCn178zmaftE5V1Pa7IsfN8zVMR1KMSkPazDxVBidnMRaYWz2%25Q5DxRteaEzZ8YWxfjRNfcPteWS6xkpKMfjedwHC5BDS6jQ%25JNp2Ydw6ZuTlcptQ%25wc3lsDifZu%25KXs0mHSc3uBr0ClJdKX324AkETQBrXpFOhDlZ24riIg6gscpF4HviR30KiIFJGHXXABHvIT9JxOO2JGvloTQigpT9GsLlZ0Ui591WmyGZI6ao5NF14ivAj0%25lJfV",
+        "description": "The BMW M2 Coupe is a high-performance sports car that combines power, agility, and precision engineering. Designed to deliver an adrenaline-fueled driving experience, the M2 Coupe features a sleek and aerodynamic body, with a muscular and aggressive front end, flared wheel arches, and a low-slung profile that exudes speed and athleticism."
+    },
+    {
+        "brand": "BMW",
+        "model": "BMW M3 Competition Sedan",
+        "engineType": "Gasoline",
+        "price": "168000",
+        "img": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf0jUi10tLhu1XzWVo7puMLWFmdkAj5DOPitppZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giUFNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYV0GWh1DMztifjeqVYDafHAPjmztYRSJyR67aftxdIXCw1RSfWQvC0%25VxdSeZGjNuzWQdjc9m93aeZQ6KojSXRjcZwBL7rrx6Kc%252NKd4WwBKupkm1Fe%252B3in0VIjup2XH50nv63iprJ8kKGwXHi4TpEP9%25rJHFlieFou4TJIsNxyL3FlTv0k1wyXIslGAnVNCrv0s9OGQJE4GA0og9TTNF9OALUouykIVODQPbAusKfgVmlDTI0Ccy2oGjY",
+        "description": "The BMW M3 Competition Sedan is a high-performance sports sedan that offers an unbeatable combination of power, precision, and luxury. With a sleek and dynamic design, advanced engineering, and cutting-edge technology, the M3 Competition is designed to deliver an exhilarating driving experience."
+    },
+    {
+        "brand": "BMW",
+        "model": "BMW 4 Series Coupe M",
+        "engineType": "Gasoline",
+        "price": "170700",
+        "img": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf0jka10tLhu1XzWVo7puMLWFmdkAj5DOPEtpsZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gA6%25NF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYpwQWh1DMztIAzeqVYDafaOxjmztYRSRgL67aftxdxUew1RSfWQlSD%25VxdSeZsbtuzWQdjc0X73aeZQ6KAnkXRjcZwBO5zrx6Kc%252yu84WwBKupCVJFe%252B3iEzxIjup2XH5pcv63iprJ8i0GwXHi4TPaC9%25rJHFlMgPou4TJIsDVvL3FlTv0JkCyXIslGATO%25Crv0s9Ol8FE4GA0ogsPoNF9OALU0M7kIogOybMDCnvLUgChDYF5GybUEqYtB89ChbNmtjIPoEqhk7f6YMLNmqn1SuwDyk7m5VdKIYCn178zQgQtE5V1Pa8ZmfN8zVMRPsMSkPazDxM77dnMRaYWD0QQ5DxRteYCfZ8YWxfjxvgcPteWS6WGgKMfjedwe28BDFjTgH%25ekxh06FXRTaDWZbQmStyl",
+        "description": "The BMW 4 Series Coupe M is a high-performance sports car that combines dynamic design, impressive power, and precise handling. The M designation is reserved for BMW's most powerful and athletic vehicles, and the 4 Series Coupe M is no exception."
+    },
+    {
+        "brand": "BMW",
+        "model": "BMW M4 Convertible",
+        "engineType": "Gasoline",
+        "price": "196400",
+        "img": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf0jPy10tLhu1XzWVo7puMLWFmdkAj5DOP5ttzZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74gtZLNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYF0VWh1DMztzjdeqVYDafaOojmztYRSJdw67aftxdIWCw1RSfWQvhv%25VxdSeZGh7uzWQdjc97f3aeZQ6KCZfXRjcZwBEqwrx6Kc%252Nl74WwBKupklNFe%252B3inEZIjup2XHByuv63iprJ2C8GwXHi4TCYB9%25rJHFlEajou4TJIsNxyL3FlTv0k1EyXIslGAnV%25Crv0s9O5RzE4GA0og8i8NF9OALUocLkIogOybLssnvLUgChyXE5GaUtcDqgXA2dba10tsGONBEiyowf",
+        "description": "The BMW M4 Convertible is a high-performance sports car that combines the thrill of driving with the enjoyment of open-air motoring. As part of BMW's M lineup, the M4 Convertible is engineered for ultimate performance, delivering power, agility, and precision handling."
+    },
+    {
+        "brand": "BMW",
+        "model": "BMW 4 Series Coupe",
+        "engineType": "Gasoline",
+        "price": "96800",
+        "img": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf6Jpw10tLhu1XzWVo7puMLWFmdkAj5DOPFtprZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74giUXNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYV2GWh1DMztzC5eqVYDafHS6jmztYRSJTN67aftxdT%25hw1RSfWQluC%25VxdSeZsNEuzWQdjc0k13aeZQ6KoInXRjcZwBLnUrx6Kc%252yud4WwBKupC3PFe%252B3inXvIjup2XH5pcv63iprJ8i0GwXHi4TPzu9%25rJHFlMRLou4TJIsDbWL3FlTv0YhwyXIslGAt5VCrv0s9OfDJE4GA0ogSYVNF9OALU0OXkIogOybAgjnvLUgChOq85GybUEqgtE89ChbNmUfcPoEqhk7bSqMLNmqn1hd2Dyk7m5VqGhYCn178zm9MtE5V1PaZlqfN8zVMRcvySkPazDxK9QdnMRaYWB2tQ5DxRte2pkZ8YWxfjpiOcPteWS6iv2KMfjedwHG5BDS6jQ%25JL92Ydw6ZuTAnptQ%25wc3lOHifZu%25KXsxsHSc3uBrK16JdKX324BVTTQBrXpF2PflZ24riIpuuscpF4Hvia00KiIFJG18bABNIqab9FSrW1vNyXq3B4lxTjHpDm",
+        "description": "The BMW 4 Series Coupe is a sleek and sporty luxury car that combines dynamic design, advanced technology, and impressive performance. With its distinctive and aggressive front end, athletic profile, and cutting-edge features, the 4 Series Coupe is designed to turn heads and deliver an engaging driving experience."
+    },
+    {
+        "brand": "BMW",
+        "model": "BMW M3 Competition Touring",
+        "engineType": "Gasoline",
+        "price": "186300",
+        "img": "https://prod.cosy.bmw.cloud/bmwweb/cosySec?COSY-EU-100-7331cqgv2Z7d%25i02uCaY3MuO2kOHUtWPfbYf0jsd10tLhu1XzWVo7puMLWFmdkAj5DOPFtuOZ8XgY1nTNIowJ4HO3zkyXq%25sGM8snGhMQSk%2508Xc9Vo74g47qNF1VgxNJ0%25ls2oub5imC2yRCzXeTt%25ViPRKVZVYV0GWh1DMztzr5eqVYDafHS6jmztYRSJyL67aftxdIXCw1RSfWQvC0%25VxdSeZGjNuzWQdjc9qO3aeZQ6Kom6XRjcZwBL7zrx6Kc%252N5F4WwBKupk3QFe%252B3in2ZIjup2XH5VXv63iprJ8OWGwXHi4TPO89%25rJHFlMWFou4TJIsD8pL3FlTv0YPiyXIslGAT5tCrv0s9Ol%259E4GA0ogsuyNF9OALUPclkIogOybMwrnvLUgChDu85GybUEqYeF89ChbNmtwjPoEqhk7f0fMLNmqn1kHnDyk7m5VnbbYCn178z5GPtE61cHQa7Gql2V6WhcbEmMTP05k4K",
+        "description": "The BMW M3 Competition Touring is a high-performance sports wagon that combines the practicality of a family car with the power and precision of a sports car. The M3 Competition Touring is part of BMW's M lineup, which is renowned for its powerful and athletic vehicles."
+    },
+    {
+        "brand": "Audi",
+        "model": "Audi A4 Limousine advanced 35 TFSI",
+        "engineType": "Gasoline",
+        "price": "100044",
+        "img": "https://cdn.nwi-ms.com/media/bg/A/comm/A20220232835/model/front.jpg?size=S&flags=transparent",
+        "description": "The Audi A4 Limousine advanced 35 TFSI is a premium sedan that combines advanced technology, luxurious features, and impressive performance. With its sleek and elegant design, the A4 Limousine advanced is a standout in its class."
+    },
+    {
+        "brand": "Audi",
+        "model": "Audi Q2 35 TFSI",
+        "engineType": "Gasoline",
+        "price": "74519",
+        "img": "https://cdn.nwi-ms.com/media/bg/A/comm/A20210231695/model/front.jpg?size=S&flags=transparent",
+        "description": "The Audi Q2 35 TFSI is a compact luxury SUV that combines style, performance, and versatility. With its bold and distinctive design, advanced technology, and impressive power, the Q2 35 TFSI is perfect for those who want a vehicle that can keep up with their active lifestyle."
+    },
+    {
+        "brand": "Audi",
+        "model": "Audi A3 Sportback 30 TDI",
+        "engineType": "Diesel",
+        "price": "76851",
+        "img": "https://cdn.nwi-ms.com/media/bg/A/comm/A20220232610/model/front.jpg?size=S&flags=transparent",
+        "description": "The Audi A3 Sportback 30 TDI is a sleek and efficient hatchback that combines advanced technology, impressive performance, and fuel efficiency. The A3 Sportback is designed to provide a dynamic and engaging driving experience, while also offering practicality and versatility."
+    },
+    {
+        "brand": "Audi",
+        "model": "Audi Q2 Advanced 35 TFSI",
+        "engineType": "Gasoline",
+        "price": "79437",
+        "img": "https://cdn.nwi-ms.com/media/bg/A/comm/A20210231356/model/front.jpg?size=S&flags=transparent",
+        "description": "The Audi Q2 Advanced 35 TFSI is a stylish and versatile luxury SUV that combines advanced technology, impressive performance, and practicality. With its bold and eye-catching design, the Q2 Advanced 35 TFSI is perfect for those who want a vehicle that stands out from the crowd."
+    },
+    {
+        "brand": "Audi",
+        "model": "Audi A3 Sportback Advanced 35 TFSI",
+        "engineType": "Gasoline",
+        "price": "84300",
+        "img": "https://cdn.nwi-ms.com/media/bg/A/comm/A20210231480/model/front.jpg?size=S&flags=transparent",
+        "description": "The Audi A3 Sportback Advanced 35 TFSI is a stylish and sophisticated hatchback that combines advanced technology, impressive performance, and practicality. With its sleek and aerodynamic design, the A3 Sportback is a standout in its class, and is perfect for those who want a vehicle that is both practical and luxurious."
+    },
+    {
+        "brand": "Audi",
+        "model": "Audi Q3 Sportback 35 TDI",
+        "engineType": "Diesel",
+        "price": "90326",
+        "img": "https://cdn.nwi-ms.com/media/bg/A/comm/A20220232676/model/front.jpg?size=S&flags=transparent",
+        "description": "The Audi Q3 Sportback 35 TDI is a stylish and versatile luxury SUV that combines advanced technology, impressive performance, and practicality. With its sleek and sporty design, the Q3 Sportback is perfect for those who want a vehicle that offers the best of both worlds - style and substance."
+    }
+]

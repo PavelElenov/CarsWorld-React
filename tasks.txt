@@ -1,2 +1,2 @@
-Create database and fill cars and accessories - false
+Create database and fill cars and accessories - true
 

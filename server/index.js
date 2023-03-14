@@ -2,6 +2,7 @@ const express = require("express");
 const expressConfig = require("./config/express");
 const mongodbConfig = require("./config/mongodb");
 const routesConfig = require("./config/routes");
+const {addAllItems, deleteAllCars} = require("./services/addCarsAndAccessories");
 
 const app = express();
 

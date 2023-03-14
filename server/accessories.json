@@ -1,0 +1,32 @@
+[
+    {
+        "name": "George Russell hat",
+        "price": "102.55",
+        "img": "https://store.silverstar.bg/storage/products/1652451363-183451.jpg"
+    },
+    {
+        "name": "Formula 1 sweatshirt",
+        "price": "153.84",
+        "img": "https://store.silverstar.bg/storage/products/1652452702-183388.jpg"
+    },
+    {
+        "name": "AMG PETRONAS vest",
+        "price": "243.56",
+        "img": "https://store.silverstar.bg/storage/products/1654505173-183491.jpg"
+    },
+    {
+        "name": "AMG PETRONAS cup",
+        "price": "38.47",
+        "img": "https://store.silverstar.bg/storage/products/1654505793-183357.jpg"
+    },
+    {
+        "name": "AMG PETRONAS sports bag",
+        "price": "192.31",
+        "img": "https://store.silverstar.bg/storage/products/1654505946-184132.jpg"
+    },
+    {
+        "name": "Mercedes-AMG Petronas collector model",
+        "price": "237.85",
+        "img": "https://store.silverstar.bg/storage/products/1676882003-B66960655.jpg"
+    }
+]
