@@ -1,30 +1,33 @@
-import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { get } from "../services/requests";
+import { Fragment } from "react";
+import Accessorie from "./Accessorie";
+import { useContext, useEffect, useState } from "react";
 import { UserContext } from "../contexts/UserContext";
+import { Link } from "react-router-dom";
 
 const Accessories = () => {
-    const {user} = useContext(UserContext);
+    const { user } = useContext(UserContext);
+    const [accessories, setAccessories] = useState(null);
+
+    useEffect(() => {
+        get("/accessories").then(data => setAccessories(data));
+    }, []);
+
 
     return (
-        <div id="accessories">
-            {user && user.isAdmin && <Link to="/add-accessorie" className="add primary-button">Add Accessorie +</Link>}
-            <section className="accessories__header">
-                <p>Избрани продукти</p>
-            </section>
-            <section className="accessories">
-                <div className="accessorie">
-                    {user && user.isAdmin && <Link to="/edit-accessorie/1"><i class="fa-solid fa-pen"></i></Link>}
-                    <div className="accessorie-img">
-                        <img src="https://store.silverstar.bg/storage/products/1654505173-183491.jpg" alt="" />
-                    </div>
-                    <div className="accessorie-content">
-                        <p className="accessorie_header">T-Shirt</p>
-                        <p className="accessorie_price">230.30lv</p>
-                        {user && <button className="primary-button">Buy</button>}
-                    </div>
-                </div>
-            </section>
-        </div>
+        <Fragment>
+            <div id="accessories">
+                {user && user.isAdmin && <Link to="/add-accessorie" className="add primary-button">Add Accessorie +</Link>}
+                <section className="accessories__header">
+                    <p>Избрани продукти</p>
+                </section>
+                <section className="accessories">
+                    {accessories && accessories.map(accessorie => <Accessorie key={accessorie._id} accessorie={accessorie} />)}
+                </section>
+            </div>
+
+        </Fragment>
+
     );
 };
 

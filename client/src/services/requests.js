@@ -10,4 +10,10 @@ export const post = async (url, data) => {
     });
 
     return response;
+};
+
+export const get = async (url) => {
+    const response = await fetch(`${baseUrl}${url}`);
+
+    return await response.json();
 }

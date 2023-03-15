@@ -1,2 +1,5 @@
-Create database and fill cars and accessories - true
+Create cars controller and make request - true
+Create accessories controller and make request - true
+Cars edit, delete and buy - false
+Accessories edit, delete and buy - false
 

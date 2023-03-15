@@ -1,7 +1,7 @@
 const EditProfile = () => {
     return (
         <div id="edit-profile">
-            <form action className="edit-profile">
+            <form className="edit-profile">
                 <p>Edit Profile</p>
                 <div className="content">
                     <div>
