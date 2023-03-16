@@ -33,13 +33,20 @@ async function login(email, password){
 };
 
 const getUserbyId = async(id) => {
-    return await User.findById(id).lean();
+    return await User.findById(id);
+};
+
+const addCarToUser = async (userId, carId) => {
+    const user = await getUserbyId(userId);
+    user.cars.push(carId);
+    user.save();
 }
 
 module.exports = {
     register,
     login,
     getUserbyId,
+    addCarToUser,
 }
 
 
