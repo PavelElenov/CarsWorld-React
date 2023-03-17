@@ -7,7 +7,8 @@ import { setItemInLocalStorage } from "../utils/localStorageManagment";
 
 const Register = () => {
     const [data, setData] = useState({
-        username: "",
+        firstName: "",
+        lastName: "",
         email: "",
         password: "",
         repPassword: "",
@@ -16,7 +17,8 @@ const Register = () => {
     const { loginUser } = useContext(UserContext);
     const [serverError, setServerError] = useState(null);
     const [errors, setErrors] = useState({
-        username: "",
+        firstName: "",
+        lastName: "",
         email: "",
         password: "",
         repPassword: "",
@@ -50,19 +52,33 @@ const Register = () => {
 
     const blurHandler = (e) => {
         switch (e.target.name) {
-            case "username":
-                e.target.value.length < 2 ? setErrors(state => ({ ...state, [e.target.name]: "Username must be at least 2 characters" })) :
-                    setErrors(state => ({ ...state, [e.target.name]: "" }));
+            case "firstName":
+                nameValidate(e.target.value, e.target.name);
+                break;
+            case "lastName":
+                nameValidate(e.target.value, e.target.name);
                 break;
             case "email":
                 !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target.value) ? setErrors(state => ({ ...state, [e.target.name]: "Invalid Email" })) :
                     setErrors(state => ({ ...state, [e.target.name]: "" }));
                 break;
-            case "password" || "repPassword":
-                e.target.value.length < 4 ? setErrors(state => ({ ...state, [e.target.name]: "Password must be at least 4 characters" })) :
-                    setErrors(state => ({ ...state, [e.target.name]: "" }));
+            case "password":
+                passwordValidate(e.target.value, e.target.name);
+                break;
+            case "repPassword":
+                passwordValidate(e.target.value, e.target.name);
                 break;
         }
+    };
+
+    const passwordValidate = (value, name) => {
+        value.length < 4 ? setErrors(state => ({ ...state, [name]: `${name.charAt(0).toUpperCase() + name.slice(1)} must be at least 4 characters` })) :
+        setErrors(state => ({ ...state, [name]: "" }));
+    };
+
+    const nameValidate = (value, name) => {
+        return value.length < 2 ? setErrors(state => ({ ...state, [name]: `${name.charAt(0).toUpperCase() + name.slice(1)} must be at least 2 characters` })) :
+        setErrors(state => ({ ...state, [name]: "" }));
     }
 
     return (
@@ -72,8 +88,12 @@ const Register = () => {
                 <p className="form__header">Register</p>
                 <div className="content">
                     <div>
-                        <input type="text" placeholder="Username" name="username" value={data.username} onChange={changeHandler} onBlur={blurHandler} />
-                        {errors.username && <span className="error">{errors.username}</span>}
+                        <input type="text" placeholder="FirstName" name="firstName" value={data.firstName} onChange={changeHandler} onBlur={blurHandler} />
+                        {errors.firstName && <span className="error">{errors.firstName}</span>}
+                    </div>
+                    <div>
+                        <input type="text" placeholder="LastName" name="lastName" value={data.lastName} onChange={changeHandler} onBlur={blurHandler} />
+                        {errors.lastName && <span className="error">{errors.lastName}</span>}
                     </div>
                     <div>
                         <input type="text" placeholder="Email" name="email" value={data.email} onChange={changeHandler} onBlur={blurHandler} />

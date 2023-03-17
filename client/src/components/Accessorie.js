@@ -7,7 +7,7 @@ const Accessorie = ({ accessorie }) => {
 
     return (
         <div className="accessorie">
-            {user && user.isAdmin && <Link to="/edit-accessorie/1"><i class="fa-solid fa-pen"></i></Link>}
+            {user && user.isAdmin && <Link to={`/edit-accessorie/${accessorie._id}`}><i class="fa-solid fa-pen"></i></Link>}
             <div className="accessorie-img">
                 <img src={accessorie.img} alt="" />
             </div>

@@ -61,7 +61,8 @@
 
 .login-register-form .content input{
     font-size:1.3rem;
-    padding: 0.2rem 1.5rem;
+    padding: 0.2rem 1.7rem;
+    width:80%;
 }
 
 #register .content input{

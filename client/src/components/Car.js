@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Car = ({car}) => {
     const { user } = useContext(UserContext);
+    
     return (
         <div className="car">
             <p className="car_info">{car.model}</p>

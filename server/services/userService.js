@@ -2,7 +2,7 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 
 
-async function register(username, email, password, repPass){
+async function register(firstName, lastName, email, password, repPass){
 
     if(repPass != password){
         throw new Error("Passwords don't match");
@@ -13,12 +13,13 @@ async function register(username, email, password, repPass){
     }else{
         const hashedPass = await bcrypt.hash(password, 9);
         const user = await User.create({
-            username,
+            firstName,
+            lastName,
             email,
             password: hashedPass,
         });
 
-        return {username:user.username, email:user.email, id:user._id, isAdmin:user.isAdmin};
+        return {firstName:user.firstName, lastName: user.lastName, email:user.email, id:user._id, isAdmin:user.isAdmin};
     }
 };
 
@@ -29,7 +30,7 @@ async function login(email, password){
         throw new Error("Incorrect email or password");
     }
 
-    return {username:user.username, email:user.email, id:user._id, isAdmin:user.isAdmin};
+    return {firstName:user.firstName, lastName: user.lastName, email:user.email, id:user._id, isAdmin:user.isAdmin};
 };
 
 const getUserbyId = async(id) => {

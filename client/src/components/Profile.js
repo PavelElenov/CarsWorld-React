@@ -5,7 +5,7 @@ import { deleteItemFromLocalStorage } from "../utils/localStorageManagment";
 import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
-    const {logoutUser} = useContext(UserContext);
+    const { logoutUser, user } = useContext(UserContext);
     const navigate = useNavigate();
 
     const logout = () => {
@@ -18,30 +18,33 @@ const Profile = () => {
         <div id="profile">
             <div className="profile-info">
                 <p>Profile Details</p>
+
                 {/* If prifile have img */}
-                {/* <div className="img">
-                    <img src="" alt="">
-                </div> */}
+                {user.img !== "" && 
+                <div className="img">
+                    <img src={user.img} alt=""/>
+                </div>}
+
                 <div className="add-img">
-                    <span>PE</span>
+                    <span>{user.firstName[0].toUpperCase() + user.lastName[0].toUpperCase()}</span>
                 </div>
                 <section className="user-data">
                     <div>
                         <span>First Name *</span>
-                        <p>Pavel</p>
+                        <p>{user.firstName}</p>
                     </div>
                     <div>
                         <span>Last Name *</span>
-                        <p>Elenov</p>
+                        <p>{user.lastName}</p>
                     </div>
                     <div>
                         <span>Email *</span>
-                        <p>pavelelenov@gmail.com</p>
+                        <p>{user.email}</p>
                     </div>
                 </section>
                 <div className="buttons">
                     <button className="primary-button" onClick={logout}>Logout</button>
-                    <Link to="/edit-profile/1" className="primary-button">Edit</Link>
+                    <Link to={`/edit-profile/${user.id}`} className="primary-button">Edit</Link>
                 </div>
             </div>
         </div>

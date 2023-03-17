@@ -1,5 +1,9 @@
 Create cars controller and make request - true
 Create accessories controller and make request - true
+Profile edit - false
 Cars edit, delete and buy - false
 Accessories edit, delete and buy - false
+Add car - false
+Add accessorie - false
+Cart - false
 

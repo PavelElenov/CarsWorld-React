@@ -17,7 +17,7 @@ router.post("/login", async(req, res) => {
 
 router.post("/register", async(req, res) => {
     try{
-        const data = await register(req.body.username, req.body.email, req.body.password, req.body.repPassword);
+        const data = await register(req.body.firstName, req.body.lastName, req.body.email, req.body.password, req.body.repPassword);
         res.status(201);
         res.json(data);
     }catch(err){
