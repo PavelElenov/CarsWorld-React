@@ -41,6 +41,11 @@
     font-size:1rem;
 }
 
+.forms-content form select{
+    font-size:1rem;
+    padding:0.5rem;
+}
+
 @media screen and (min-width: 1024px){
     .forms-content{
         padding:3rem;

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
-import { useParams } from "react-router-dom";
-import { get } from "../services/requests";
+import { useParams, useNavigate } from "react-router-dom";
+import { get, put, remove } from "../services/requests";
 import { UserContext } from "../contexts/UserContext";
 import { Fragment } from "react";
 
@@ -9,11 +9,19 @@ const Details = () => {
     const [car, setCar] = useState(null);
     const { id } = useParams();
     const { user } = useContext(UserContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
         get(`/cars/details/${id}`).then(data => setCar(data))
     }, []);
 
+    const deleteCar = async () => {
+        await remove(`/cars/car/${id}`).then(navigate("/cars"));
+    }
+
+    const buyCar = async () => {
+        await put(`/cars/car/${id}`, user.id).then(navigate("/cars"));
+    }
 
     return (
         <Fragment>
@@ -33,10 +41,10 @@ const Details = () => {
                         {user && user.isAdmin ?
                             <div className="buttons">
                                 <Link to={`/edit-car/${car._id}`} className="primary-button">Edit</Link>
-                                <button className="primary-button">Delete</button>
+                                <button className="primary-button" onClick={deleteCar}>Delete</button>
                             </div> :
                             <div className="buy">
-                                <button className="primary-button">Buy</button>
+                                <button className="primary-button" onClick={buyCar}>Buy</button>
                             </div>
                         }
                     </div>
