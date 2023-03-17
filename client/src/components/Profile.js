@@ -18,16 +18,15 @@ const Profile = () => {
         <div id="profile">
             <div className="profile-info">
                 <p>Profile Details</p>
-
-                {/* If prifile have img */}
-                {user.img !== "" && 
-                <div className="img">
-                    <img src={user.img} alt=""/>
-                </div>}
-
-                <div className="add-img">
-                    <span>{user.firstName[0].toUpperCase() + user.lastName[0].toUpperCase()}</span>
-                </div>
+                {user.img !== "" ?
+                    <div className="img">
+                        <img src={user.img} alt="" />
+                    </div>
+                    :
+                    <div className="add-img">
+                        <span>{user.firstName[0].toUpperCase() + user.lastName[0].toUpperCase()}</span>
+                    </div>
+                }
                 <section className="user-data">
                     <div>
                         <span>First Name *</span>

@@ -3,7 +3,6 @@ import { useState, useContext } from "react";
 import { post } from "../services/requests";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/UserContext";
-import { setItemInLocalStorage } from "../utils/localStorageManagment";
 
 const Login = () => {
     const [data, setData] = useState({
@@ -29,7 +28,6 @@ const Login = () => {
             if(response.ok === true){
                 const data = await response.json();
                 loginUser(data);
-                setItemInLocalStorage("auth", data);
                 navigate("/");
             }else{
                 const error = await response.json();

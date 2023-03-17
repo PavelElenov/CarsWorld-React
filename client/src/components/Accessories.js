@@ -13,6 +13,9 @@ const Accessories = () => {
         get("/accessories").then(data => setAccessories(data));
     }, []);
 
+    const removeAccessoriFromState = (name) => {
+        setAccessories(state => state.filter(accessorie => accessorie.name !== name && accessorie))
+    }
 
     return (
         <Fragment>
@@ -22,7 +25,7 @@ const Accessories = () => {
                     <p>Избрани продукти</p>
                 </section>
                 <section className="accessories">
-                    {accessories && accessories.map(accessorie => <Accessorie key={accessorie._id} accessorie={accessorie} />)}
+                    {accessories && accessories.map(accessorie => <Accessorie key={accessorie._id} accessorie={accessorie} removeAccessoriFromState={removeAccessoriFromState}/>)}
                 </section>
             </div>
 

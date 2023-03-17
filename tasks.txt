@@ -1,13 +1,5 @@
-Create cars controller and make request - true
-Create accessories controller and make request - true
-<<<<<<< HEAD
-Profile edit - false
-Cars edit, delete and buy - false
-=======
-Cars edit, delete and buy - true
->>>>>>> b55379d452ba6cb760fae75c45705d3940f709b7
-Accessories edit, delete and buy - false
 Add car - false
-Add accessorie - false
+Add accessorie - true
 Cart - false
+Forms Error Handling - false
 

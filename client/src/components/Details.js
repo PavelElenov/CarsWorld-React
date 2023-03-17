@@ -12,7 +12,7 @@ const Details = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        get(`/cars/details/${id}`).then(data => setCar(data))
+        get(`/cars/car/${id}`).then(data => setCar(data))
     }, []);
 
     const deleteCar = async () => {

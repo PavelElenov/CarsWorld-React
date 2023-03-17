@@ -43,13 +43,21 @@
     padding: 0.5rem 2rem;
 }
 
-.accessorie a i{
+.accessorie a .fa-pen{
     position: absolute;
-    right: 90px;
+    right: 50px;
     top: -17px;
+    color:grey;
 }
 
-.accessorie a i:hover{
+.accessorie span .fa-trash{
+    position: absolute;
+    right: 20px;
+    top: -17px;
+    color:grey;
+}
+
+.accessorie i:hover{
     transform: scale(1.1);
 }
 

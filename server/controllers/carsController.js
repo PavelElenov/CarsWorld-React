@@ -13,13 +13,13 @@ router.get("/", async (req, res) => {
     res.status(200).json({mercedes, bmw, audi});
 });
 
-router.get("/details/:id", async (req, res) => {
+router.get("/car/:id", async (req, res) => {
     const car = await getCarById(req.params.id);
 
     res.status(200).json(car);
 });
 
-router.patch("/edit-car/:id", async (req, res) => {
+router.patch("/car/:id", async (req, res) => {
     await updateCarById(req.params.id, req.body);
 
     res.status(200);

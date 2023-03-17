@@ -5,6 +5,7 @@ const schema = new Schema({
     lastName: {type:String, required:true},
     email: {type:String, required:true},
     password: {type:String, required:true},
+    img: {type:String, default:""},
     isAdmin: {type:Boolean, default:false},
     cars: {type:[Schema.Types.ObjectId], ref:"Car"},
     accessories: {type:[Schema.Types.ObjectId], ref:"Accessorie"}

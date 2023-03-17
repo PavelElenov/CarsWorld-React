@@ -4,23 +4,23 @@ const AddCar = () => {
             <form>
                 <p>Create Car</p>
                 <div>
-                    <label htmlFor>Brand:</label>
+                    <label>Brand:</label>
                     <input type="text" name="brand" />
                 </div>
                 <div>
-                    <label htmlFor>Model:</label>
+                    <label>Model:</label>
                     <input type="text" name="model" />
                 </div>
                 <div>
-                    <label htmlFor>Price:</label>
+                    <label>Price:</label>
                     <input type="number" name="price" />
                 </div>
                 <div>
-                    <label htmlFor>Img:</label>
+                    <label>Img:</label>
                     <input type="text" name="img" />
                 </div>
                 <div>
-                    <label htmlFor>Description:</label>
+                    <label>Description:</label>
                     <textarea name="description" id="description" rows={15} cols={30}/>
                 </div>
                 <button className="primary-button">Create</button>

@@ -1,13 +1,12 @@
 const User = require("../models/User");
 const bcrypt = require("bcrypt");
+const createToken = require("../utils/createToken");
 
 
 async function register(firstName, lastName, email, password, repPass){
 
     if(repPass != password){
         throw new Error("Passwords don't match");
-    }else if(await User.findOne({username:username})){
-        throw new Error("Already have user with this username");
     }else if(await User.findOne({email:email})){
         throw new Error("Already have user with this email",);
     }else{
@@ -19,7 +18,7 @@ async function register(firstName, lastName, email, password, repPass){
             password: hashedPass,
         });
 
-        return {firstName:user.firstName, lastName: user.lastName, email:user.email, id:user._id, isAdmin:user.isAdmin};
+        return createToken(user);
     }
 };
 
@@ -30,7 +29,7 @@ async function login(email, password){
         throw new Error("Incorrect email or password");
     }
 
-    return {firstName:user.firstName, lastName: user.lastName, email:user.email, id:user._id, isAdmin:user.isAdmin};
+    return createToken(user);
 };
 
 const getUserbyId = async(id) => {
@@ -41,6 +40,19 @@ const addCarToUser = async (userId, carId) => {
     const user = await getUserbyId(userId);
     user.cars.push(carId);
     user.save();
+};
+
+const editUser = async (id, data) => {
+    await User.findByIdAndUpdate(id, data);
+    const user = await getUserbyId(id);
+
+    return user;
+};
+
+const addAccessorieToUser = async (userId, accessorieId) => {
+    const user = await getUserbyId(userId);
+    user.accessories.push(accessorieId);
+    user.save();
 }
 
 module.exports = {
@@ -48,6 +60,8 @@ module.exports = {
     login,
     getUserbyId,
     addCarToUser,
+    editUser,
+    addAccessorieToUser,
 }
 
 

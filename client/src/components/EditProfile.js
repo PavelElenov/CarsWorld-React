@@ -1,36 +1,41 @@
 import { useContext, useState } from "react";
 import { UserContext } from "../contexts/UserContext";
+import { patch } from "../services/requests";
+import { useNavigate } from "react-router-dom";
 
 const EditProfile = () => {
-    const {user} = useContext(UserContext);
+    const {user, editUser} = useContext(UserContext);
     const [data, setData] = useState(user);
+    const navigate = useNavigate();
 
     const changeHandler = (e) => {
         setData(state => ({...state, [e.target.name]:e.target.value}));
     }
+
     const editProfile = () => {
-        // Make request with data
+        patch(`/user/${user.id}`, data).then(res => res.json()).then(newData => editUser(newData)).then(navigate("/profile"));
     }
+
     return (
         <div id="edit-profile">
             <form className="edit-profile" onSubmit={editProfile}>
                 <p>Edit Profile</p>
                 <div className="content">
                     <div>
-                        <label htmlFor>FirstName:</label>
-                        <input type="text" name="firstName" value={user.firstName} />
+                        <label>FirstName:</label>
+                        <input type="text" name="firstName" value={data.firstName} onChange={changeHandler}/>
                     </div>
                     <div>
-                        <label htmlFor>LastName:</label>
-                        <input type="text" name="lastName" value={user.lastName} />
+                        <label>LastName:</label>
+                        <input type="text" name="lastName" value={data.lastName} onChange={changeHandler}/>
                     </div>
                     <div>
-                        <label htmlFor>Email:</label>
-                        <input type="text" name="email" value={user.email}/>
+                        <label>Email:</label>
+                        <input type="text" name="email" value={data.email} onChange={changeHandler}/>
                     </div>
                     <div>
-                        <label htmlFor>Image:</label>
-                        <input type="text" name="img-url" value={user.img}/>
+                        <label>Image:</label>
+                        <input type="text" name="img" value={data.img} placeholder={data.img  ? "" : "https://..."} onChange={changeHandler}/>
                     </div>
                     <button className="primary-button">Edit</button>
                 </div>

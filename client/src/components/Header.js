@@ -5,10 +5,9 @@ import { Fragment } from "react";
 
 const Header = () => {
 
-    const { user } = useContext(UserContext);
+    const { user, logoutUser } = useContext(UserContext);
 
     function onMenuClick() {
-        console.log('HI');
         const navigationBar = document.querySelector(".navigation-bar");
         const menuIcon = document.querySelector(".menu i");
         const isActive = navigationBar.className.includes("active-navigation-bar");

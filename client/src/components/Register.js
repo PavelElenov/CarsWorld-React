@@ -3,7 +3,6 @@ import { useState, useContext } from "react";
 import { post } from "../services/requests";
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../contexts/UserContext";
-import { setItemInLocalStorage } from "../utils/localStorageManagment";
 
 const Register = () => {
     const [data, setData] = useState({
@@ -28,7 +27,6 @@ const Register = () => {
         e.preventDefault();
         Object.keys(data).map(key => data[key] == "" && setErrors(state => ({ ...state, [key]: `${key.charAt(0).toUpperCase() + key.slice(1)} is required` })));
         const haveErrors = Object.keys(errors).find(key => errors[key] !== "");
-        console.log(haveErrors);
 
         if (!haveErrors) {
             const response = await post("/register", data);
@@ -36,7 +34,6 @@ const Register = () => {
             if (response.ok === true) {
                 const data = await response.json();
                 loginUser(data);
-                setItemInLocalStorage("auth", data);
                 navigate("/");
             } else {
                 const error = await response.json();
