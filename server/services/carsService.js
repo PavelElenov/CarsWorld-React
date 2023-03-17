@@ -16,9 +16,14 @@ const deleteCarById = async (id) => {
     return await Car.findByIdAndDelete(id);
 };
 
+const createCar = async (data) => {
+    await Car.create(data);
+}
+
 module.exports = {
     getAllCars,
     getCarById,
     updateCarById,
     deleteCarById,
+    createCar,
 }

@@ -1,4 +1,4 @@
-const { getAllCars, getCarById, updateCarById, deleteCarById } = require("../services/carsService");
+const { getAllCars, getCarById, updateCarById, deleteCarById, createCar } = require("../services/carsService");
 const { addCarToUser } = require("../services/userService");
 
 const router = require("express").Router();
@@ -35,6 +35,12 @@ router.put("/car/:id", async (req, res) => {
     await addCarToUser(req.body.userId, req.params.id);
 
     res.status(200);
+});
+
+router.post("/", async (req, res) => {
+    await createCar(req.body);
+
+    res.status(201);
 })
 
 module.exports = router;

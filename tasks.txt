@@ -1,5 +1,6 @@
-Add car - false
+Add car - true
 Add accessorie - true
 Cart - false
 Forms Error Handling - false
+Protected Routes - false
 
