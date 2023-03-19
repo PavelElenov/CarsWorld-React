@@ -1,0 +1,50 @@
+#orderPage{
+    height: 83vh;
+    background-color: rgb(202, 196, 196);
+}
+
+.order{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+    padding:2rem;
+    width: 200px;
+}
+
+.order i{
+    font-size:5rem;
+    color:green;
+    margin-bottom:1rem;
+}
+
+.order p{
+    font-size: 1.3rem;
+}
+
+.order p:nth-child(2){
+    color:green;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.order p:nth-child(4){
+    margin-bottom: 1rem;
+}
+
+.order button{
+    background-color: green;
+    color:white;
+    padding:1rem 1.5rem;
+    border-radius: 30px;
+    border: none;
+    font-size: 1rem;
+}
+
+.order button:hover {
+    transform: scale(1.1);
+}
+

@@ -9,7 +9,7 @@ const Accessorie = ({ accessorie, removeAccessoriFromState }) => {
     const navigate = useNavigate();
 
     const buyAccessorie = () => {
-        put(`/accessories/accessorie/${accessorie._id}`, user.id).then(navigate("/cart"));
+        put(`/accessories/accessorie/${accessorie._id}`, user.id).then(navigate("/accessorie"));
     }
 
     const deleteAccessorie = () => {

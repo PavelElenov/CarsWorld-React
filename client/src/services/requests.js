@@ -30,9 +30,13 @@ export const patch = async (url, data) => {
     return response;
 };
 
-export const remove = async (url) => {
+export const remove = async (url, data) => {
     const response = await fetch(`${baseUrl}${url}`, {
         method:"DELETE",
+        headers: {
+            'Content-Type': "application/json"
+        },
+        body: data ? JSON.stringify(data) : JSON.stringify({})
     });
 
     return response;

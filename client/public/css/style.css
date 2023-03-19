@@ -9,6 +9,7 @@
 @import url("./edit-profile.css");
 @import url("./car-details.css");
 @import url("./forms.css");
+@import url("./order.css");
 
 *{
     border-radius: border-box;

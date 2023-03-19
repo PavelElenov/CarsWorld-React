@@ -1,6 +1,4 @@
-Add car - true
-Add accessorie - true
-Cart - false
+UserItemsContext - false
 Forms Error Handling - false
 Protected Routes - false
 

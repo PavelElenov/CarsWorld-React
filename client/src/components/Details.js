@@ -4,11 +4,13 @@ import { useParams, useNavigate } from "react-router-dom";
 import { get, put, remove } from "../services/requests";
 import { UserContext } from "../contexts/UserContext";
 import { Fragment } from "react";
+import { UserItemsContext } from "../contexts/UserItemsContext";
 
 const Details = () => {
     const [car, setCar] = useState(null);
     const { id } = useParams();
     const { user } = useContext(UserContext);
+    const { addItem } = useContext(UserItemsContext);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -20,7 +22,7 @@ const Details = () => {
     }
 
     const buyCar = async () => {
-        await put(`/cars/car/${id}`, user.id).then(navigate("/cars"));
+        await put(`/cars/car/${id}`, user.id).then(addItem(id)).then(navigate("/cars"));  
     }
 
     return (

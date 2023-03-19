@@ -17,29 +17,33 @@ import EditProfile from "./components/EditProfile";
 import AddAccessorie from "./components/AddAccessorie";
 import EditAccessorie from "./components/EditAccessorie";
 import { UserContextProvider } from "./contexts/UserContext";
+import SuccessfulOrder from "./components/SuccessfulOrder";
+import { UserItemsContextProvider } from "./contexts/UserItemsContext";
 
 function App() {
   return (
     <Fragment>
       <UserContextProvider>
-        <Header />
-        <Routes>
-          <Route path="" element={<Home />} />
-          <Route path="/cars" element={<Cars />} />
-          <Route path="/accessories" element={<Accessories />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/details/:id" element={<Details />} />
-          <Route path="/edit-car/:id" element={<EditCar />} />
-          <Route path="/add-car" element={<AddCar />} />
-          <Route path="/edit-profile/:id" element={<EditProfile />} />
-          <Route path="/add-accessorie" element={<AddAccessorie />} />
-          <Route path="/edit-accessorie/:id" element={<EditAccessorie />} />
-        </Routes>
+        <UserItemsContextProvider>
+          <Header />
+          <Routes>
+            <Route path="" element={<Home />} />
+            <Route path="/cars" element={<Cars />} />
+            <Route path="/accessories" element={<Accessories />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/details/:id" element={<Details />} />
+            <Route path="/edit-car/:id" element={<EditCar />} />
+            <Route path="/add-car" element={<AddCar />} />
+            <Route path="/edit-profile/:id" element={<EditProfile />} />
+            <Route path="/add-accessorie" element={<AddAccessorie />} />
+            <Route path="/edit-accessorie/:id" element={<EditAccessorie />} />
+            <Route path="/successfulOrder" element={<SuccessfulOrder />} />
+          </Routes>
+        </UserItemsContextProvider>
       </UserContextProvider>
-
       <Footer />
     </Fragment>
   );
