@@ -8,11 +8,11 @@ import { UserItemsContext } from "../contexts/UserItemsContext";
 const Cart = () => {
     const { user } = useContext(UserContext);
     const {items, deleteItem, deleteAllItems, totalPrice} = useContext(UserItemsContext);
-    
     const navigate = useNavigate();
 
     const deleteItemHandler = async (item) => {
-        await remove(`/cart/${user.id}`, item).then(deleteItem(item._id));
+        await remove(`/cart/${user.id}`, item);
+        deleteItem(item._id);
     }
 
     const buyAllProducts = async () => {

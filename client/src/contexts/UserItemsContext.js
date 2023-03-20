@@ -6,27 +6,34 @@ import { UserContext } from "./UserContext";
 export const UserItemsContext = createContext();
 
 export const UserItemsContextProvider = ({children}) => {
+    const {user} = useContext(UserContext);
     const [items, setItems] = useState([]);
     const [itemsLength, setItemsLength] = useState(0);
     const [totalPrice, setTotalPrice] = useState(0);
-    const {user} = useContext(UserContext);
-
+    
     useEffect(() => {
         get(`/cart/${user.id}`).then(data => setItems(data));
     }, []);
 
     useEffect(() => {
         items && setItemsLength(items.length);
-        items && setTotalPrice(items.reduce((total, item) => total + item.price, 0))
+        items && setTotalPrice(items.reduce((total, item) => total + item.price, 0));
     },[items]);
 
-    const deleteItem = (id) => {
-        console.log(id);
+    const deleteItem = async (id) => {
         setItems(state => state.filter(item => item._id !== id && item));
     };
 
-    const addItem = (id) => {
-        setItems(state => [...state, id]);
+    const addItem = async (id, type) => {
+        let item;
+
+        if(type == "car"){
+            item = await get(`/cars/car/${id}`);
+        }else{
+            item = await get(`/accessories/accessorie/${id}`);
+        }
+
+        setItems(state => [...state, item]);
     };
 
     const deleteAllItems = () => {

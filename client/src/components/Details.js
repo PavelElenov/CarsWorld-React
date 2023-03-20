@@ -18,11 +18,14 @@ const Details = () => {
     }, []);
 
     const deleteCar = async () => {
+        alert("Are you sure, you want to delete this car?")
         await remove(`/cars/car/${id}`).then(navigate("/cars"));
     }
 
     const buyCar = async () => {
-        await put(`/cars/car/${id}`, user.id).then(addItem(id)).then(navigate("/cars"));  
+        await put(`/cars/car/${id}`, user.id);
+        addItem(id, "car")
+        navigate("/cars");
     }
 
     return (

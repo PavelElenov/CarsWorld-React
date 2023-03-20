@@ -11,14 +11,14 @@ router.get("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
     const item = req.body;
     item.brand ? deleteCarFromUserCars(req.params.id, item._id) : deleteAccessorieFromUserAccessories(req.params.id, item._id);
-
-    res.status(200);
+   
+    res.status(200).json("ok");
 });
 
 router.delete("/all/:id", async (req, res) => {
     await deleteAllProducts(req.params.id);
     
-    res.status(200);
+    res.status(200).json("ok");
 })
 
 module.exports = router;

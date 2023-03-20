@@ -3,13 +3,15 @@ import { UserContext } from "../contexts/UserContext";
 import { Link, useNavigate } from "react-router-dom";
 import { Fragment } from "react";
 import { put, remove } from "../services/requests";
+import { UserItemsContext } from "../contexts/UserItemsContext";
 
 const Accessorie = ({ accessorie, removeAccessoriFromState }) => {
     const { user } = useContext(UserContext);
+    const { addItem, deleteItem } = useContext(UserItemsContext);
     const navigate = useNavigate();
 
-    const buyAccessorie = () => {
-        put(`/accessories/accessorie/${accessorie._id}`, user.id).then(navigate("/accessorie"));
+    const buyAccessorie = async () => {
+        await put(`/accessories/accessorie/${accessorie._id}`, user.id).then(addItem(accessorie._id, "accessorie")).then(navigate("/cart"));
     }
 
     const deleteAccessorie = () => {

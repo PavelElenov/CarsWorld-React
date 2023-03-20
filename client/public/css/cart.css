@@ -26,6 +26,7 @@
 
 .items{
     margin-bottom:2rem;
+    width: 80%;
 }
 
 .item-info{
@@ -66,8 +67,7 @@
     background-color: rgb(196, 189, 189);
     border:2px solid black;
     padding:0.5rem;
-    height: 170px;
-    width: 20%;
+    width: 200px;
 }
 
 .total-price p:nth-child(1){
@@ -120,7 +120,7 @@
         padding:1rem;
     }
     .product-img{
-        width: 50%;
+        width: 45%;
     }
 }
 
@@ -137,6 +137,11 @@
 
     .item-info{
         gap:2rem;
+        height: 180px;
+    }
+
+    .total-price{
+        height: 170px;
     }
 }
 
@@ -163,7 +168,7 @@
 
     .total-price{
         height: 185px;
-        width: 33%;
+        width: 200px;
     }
 
 }

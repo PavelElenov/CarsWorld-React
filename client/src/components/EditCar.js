@@ -21,7 +21,7 @@ const EditCar = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        await patch(`/cars/car/${id}`, car).then(navigate("/cars"));
+        patch(`/cars/car/${id}`, car).then(navigate("/cars"));
     }
 
     return (

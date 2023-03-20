@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
 router.put("/accessorie/:id", async (req, res) => {
     await addAccessorieToUser(req.body.userId, req.params.id);
 
-    res.status(200);
+    res.status(200).json("ok");
 });
 
 router.get("/accessorie/:id", async (req, res) => {
@@ -24,19 +24,19 @@ router.get("/accessorie/:id", async (req, res) => {
 router.patch("/accessorie/:id", async (req, res) => {
     await editAccessorie(req.params.id, req.body);
 
-    res.status(200);
+    res.status(200).json("ok");
 });
 
 router.delete("/accessorie/:id", async (req, res) => {
     await deleteAccessorie(req.params.id);
 
-    res.status(200);
+    res.status(200).json("ok");
 });
 
 router.post("/", async (req, res) => {
     await addAccessorie(req.body);
 
-    res.status(201);
+    res.status(201).json("ok");
 })
 
 module.exports = router;

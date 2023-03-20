@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, Fragment } from "react";
 import { UserContext } from "../contexts/UserContext";
-import { Fragment } from "react";
+import { UserItemsContext } from "../contexts/UserItemsContext";
 
 const Header = () => {
-
+    const { itemsLength } = useContext(UserItemsContext);
     const { user, logoutUser } = useContext(UserContext);
 
     function onMenuClick() {
@@ -44,14 +44,14 @@ const Header = () => {
                         <li className="item">
                             <Link to="/accessories" className="link"> Accessories </Link>
                         </li>
-    
+
                         {user ?
                             <Fragment>
                                 <li className="cart">
                                     <Link to="/cart" className="link">
                                         <i className="fa-solid fa-cart-shopping" />
                                         <span className="cart__text">Cart</span>
-                                        <span className="cart-items">0</span>
+                                        <span className="cart-items">{itemsLength}</span>
                                     </Link>
                                 </li>
 

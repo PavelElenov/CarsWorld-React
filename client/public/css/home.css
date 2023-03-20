@@ -166,7 +166,15 @@
 
     .new-car{
         height: 23rem;
-        width: 320px;
+        width: 300px;
+    }
+
+    .new-cars{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
+        margin: 0 auto;
+        gap:1rem;
     }
 }
 @media screen and (min-width:1014px){
@@ -183,14 +191,6 @@
 
     .next, .prev{
         font-size:1.5rem;
-    }
-
-
-    .new-cars{
-        display: grid;
-        grid-template-columns: repeat(2, 40%);
-        justify-content: center;
-        margin: 0 auto;
     }
 
     .car-info p{
@@ -224,7 +224,7 @@
 
 @media screen and (min-width: 1400px){
     .new-cars{
-        grid-template-columns: repeat(3, 33%);
+        grid-template-columns: repeat(3, 30%);
         margin-bottom:2rem;
     }
 
@@ -235,10 +235,6 @@
 }
 
 @media screen and (min-width:1600px){
-    .new-car{
-        width: 330px;
-    }
-
     .slideshow-container{
         max-width: 1350px;
     }
