@@ -12,7 +12,7 @@ export const UserItemsContextProvider = ({children}) => {
     const [totalPrice, setTotalPrice] = useState(0);
     
     useEffect(() => {
-        get(`/cart/${user.id}`).then(data => setItems(data));
+        user && get(`/cart/${user.id}`).then(data => setItems(data));
     }, []);
 
     useEffect(() => {

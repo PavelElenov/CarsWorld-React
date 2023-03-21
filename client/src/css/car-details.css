@@ -56,6 +56,10 @@
     justify-content: space-between;
 }
 
+.buy span{
+    display: inline-block;
+}
+
 @media screen and (min-width:1024px){
     #car-details{
         padding:2rem;

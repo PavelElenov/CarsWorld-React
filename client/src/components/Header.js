@@ -45,23 +45,24 @@ const Header = () => {
                             <Link to="/accessories" className="link"> Accessories </Link>
                         </li>
 
-                        {user ?
-                            <Fragment>
-                                <li className="cart">
-                                    <Link to="/cart" className="link">
-                                        <i className="fa-solid fa-cart-shopping" />
-                                        <span className="cart__text">Cart</span>
-                                        <span className="cart-items">{itemsLength}</span>
-                                    </Link>
-                                </li>
+                        {user && user.isAdmin !== true &&
+                            <li className="cart">
+                                <Link to="/cart" className="link">
+                                    <i className="fa-solid fa-cart-shopping" />
+                                    <span className="cart__text">Cart</span>
+                                    <span className="cart-items">{itemsLength}</span>
+                                </Link>
+                            </li>
+                        }
 
-                                <li>
-                                    <Link to="/profile" className="link">
-                                        <i className="fa-solid fa-user" />
-                                        Profile
-                                    </Link>
-                                </li>
-                            </Fragment>
+
+                        {user ?
+                            <li>
+                                <Link to="/profile" className="link">
+                                    <i className="fa-solid fa-user" />
+                                    Profile
+                                </Link>
+                            </li>
                             :
                             <Fragment>
                                 <li>

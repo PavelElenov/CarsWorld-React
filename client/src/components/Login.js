@@ -19,10 +19,9 @@ const Login = () => {
 
     const login = async (e) => {
         e.preventDefault();
-        Object.keys(data).map(key => data[key] == "" && setErrors(state => ({ ...state, [key]: `${key.charAt(0).toUpperCase() + key.slice(1)} is required` })));
-        const haveErrors = Object.keys(errors).find(key => errors[key] !== "");
+        const haveError = checkForErrors();
 
-        if(!haveErrors){
+        if(!haveError){
             const response = await post("/login", data);
 
             if(response.ok === true){
@@ -34,7 +33,16 @@ const Login = () => {
                 setServerError(error.message);
             }
         }
-       
+    }
+
+    const checkForErrors = () => {
+        const haveError = Object.keys(data).find(key => data[key] == "") || Object.keys(errors).find(key => errors[key] !== "") && true;
+        
+        if(haveError){
+            Object.keys(data).map(key => data[key] == "" && setErrors(state => ({...state, [key]: `${key.charAt(0).toUpperCase() + key.slice(1)} is required`})));
+        }   
+
+        return haveError ? true : false;
     }
 
     const onChangeHandler = (e) => {

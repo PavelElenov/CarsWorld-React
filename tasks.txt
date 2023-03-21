@@ -1,4 +1,4 @@
-UserItemsContext - true
-Forms Error Handling - false
-Protected Routes - false
+Forms Error Handling - true
+Protected Routes - true
+Host client and server - false
 

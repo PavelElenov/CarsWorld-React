@@ -10,11 +10,12 @@ const Details = () => {
     const [car, setCar] = useState(null);
     const { id } = useParams();
     const { user } = useContext(UserContext);
-    const { addItem } = useContext(UserItemsContext);
+    const { addItem, items } = useContext(UserItemsContext);
     const navigate = useNavigate();
+    const isCarBought = car && items.filter(item => item._id == car._id && true);
 
     useEffect(() => {
-        get(`/cars/car/${id}`).then(data => setCar(data))
+        get(`/cars/car/${id}`).then(data => setCar(data));
     }, []);
 
     const deleteCar = async () => {
@@ -49,7 +50,13 @@ const Details = () => {
                                 <button className="primary-button" onClick={deleteCar}>Delete</button>
                             </div> :
                             <div className="buy">
-                                <button className="primary-button" onClick={buyCar}>Buy</button>
+                                {
+                                    isCarBought.length > 0 ?
+                                        <span className="primary-button">You already bought this car</span>
+                                        :
+                                        <button className="primary-button" onClick={buyCar}>Buy</button>
+                                }
+
                             </div>
                         }
                     </div>

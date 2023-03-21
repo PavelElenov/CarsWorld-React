@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Routes, Route } from "react-router-dom";
+import "./css/style.css";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -19,6 +20,9 @@ import EditAccessorie from "./components/EditAccessorie";
 import { UserContextProvider } from "./contexts/UserContext";
 import SuccessfulOrder from "./components/SuccessfulOrder";
 import { UserItemsContextProvider } from "./contexts/UserItemsContext";
+import IsUser from "./components/ProtectedRoutes/IsUser";
+import IsAdmin from "./components/ProtectedRoutes/IsAdmin";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
@@ -34,13 +38,18 @@ function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/details/:id" element={<Details />} />
-            <Route path="/edit-car/:id" element={<EditCar />} />
-            <Route path="/add-car" element={<AddCar />} />
-            <Route path="/edit-profile/:id" element={<EditProfile />} />
-            <Route path="/add-accessorie" element={<AddAccessorie />} />
-            <Route path="/edit-accessorie/:id" element={<EditAccessorie />} />
+            <Route element={<IsUser />}>
+              <Route path="/details/:id" element={<Details />} />
+            </Route>
+            <Route element={<IsAdmin />}>
+              <Route path="/edit-car/:id" element={<EditCar />} />
+              <Route path="/add-car" element={<AddCar />} />
+              <Route path="/edit-profile/:id" element={<EditProfile />} />
+              <Route path="/add-accessorie" element={<AddAccessorie />} />
+              <Route path="/edit-accessorie/:id" element={<EditAccessorie />} />
+            </Route>
             <Route path="/successfulOrder" element={<SuccessfulOrder />} />
+            <Route path="/*" element={<ErrorPage />}/>
           </Routes>
         </UserItemsContextProvider>
       </UserContextProvider>
