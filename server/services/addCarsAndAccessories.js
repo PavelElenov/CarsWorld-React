@@ -38,7 +38,7 @@ const addAllItems = () => {
             };
             console.log('All accessories created');
         }
-    })
+    });
 };
 
 const deleteAllCars = async () => {

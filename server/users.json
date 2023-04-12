@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "641448b7400484b6f072d098"
+  },
+  "firstName": "Pavel",
+  "lastName": "Elenov",
+  "email": "pavelelenov@gmail.com",
+  "password": "$2b$09$.OU.JrbN2zEPKJ.X9jv2uu/maumcRvY6fddTLj96hx0vmngxDJynu",
+  "isAdmin": true,
+  "cars": [],
+  "accessories": [],
+  "__v": 0,
+  "img": "https://cmmodels.de/wp-content/uploads/2021/08/gabriel-new-face-white-shirt-brown-hair-pretty-boy-young-white-background-studio-brown-hair-wet-look.jpg"
+},{
+  "_id": {
+    "$oid": "6414592a5510009f356cd997"
+  },
+  "firstName": "Nikola",
+  "lastName": "Gunchev",
+  "email": "nikola@gmail.com",
+  "password": "$2b$09$BaZHzeUqasbQ.uhT4RFP2O1i63KD8c5HSzEfRNLmUuHsLxQERtblm",
+  "img": "https://th-thumbnailer.cdn-si-edu.com/vU5xtHYj5PvGHFa47Ijb5Mf4EEs=/fit-in/1600x0/filters:focal(792x601:793x602)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/52/e4/52e44474-c2dc-41e0-bb77-42a904695196/this-image-shows-a-portrait-of-dragon-man-credit-chuang-zhao_web.jpg",
+  "isAdmin": false,
+  "cars": [],
+  "accessories": [],
+  "__v": 294
+},{
+  "_id": {
+    "$oid": "6415dc027c915b91414d6ebb"
+  },
+  "firstName": "Yovo",
+  "lastName": "Nedelchev",
+  "email": "yovo@gmail.com",
+  "password": "$2b$09$ZuyDUZHJUdL387L4CAYGDe1PToPIX.EEbXa5Fhvp/8W8/RSNCtNOa",
+  "img": "https://cdn.britannica.com/87/143987-050-DCFB28C5/reconstruction-hominin-man-Java.jpg?w=400&h=300&c=crop",
+  "isAdmin": false,
+  "cars": [],
+  "accessories": [],
+  "__v": 0
+}]

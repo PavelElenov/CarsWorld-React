@@ -3,6 +3,7 @@ const expressConfig = require("./config/express");
 const mongodbConfig = require("./config/mongodb");
 const routesConfig = require("./config/routes");
 const {addAllItems, deleteAllCars} = require("./services/addCarsAndAccessories");
+require("dotenv").config();
 
 const app = express();
 
@@ -13,5 +14,7 @@ async function start(){
     expressConfig(app);
     routesConfig(app);
 
-    app.listen(3030, console.log("Server listening on port 3030"));
+    // addAllItems();
+
+    app.listen(process.env.PORT || 3030, console.log("Server listening on port 3030"));
 }
