@@ -18,7 +18,6 @@ const Car = ({car}) => {
                 <div>
                     <Link to={`/details/${car._id}`} className="primary-button">Details</Link>
                 </div>}
-
         </div>
     );
 };

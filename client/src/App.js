@@ -40,11 +40,11 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route element={<IsUser />}>
               <Route path="/details/:id" element={<Details />} />
+              <Route path="/edit-profile/:id" element={<EditProfile />} />
             </Route>
             <Route element={<IsAdmin />}>
               <Route path="/edit-car/:id" element={<EditCar />} />
               <Route path="/add-car" element={<AddCar />} />
-              <Route path="/edit-profile/:id" element={<EditProfile />} />
               <Route path="/add-accessorie" element={<AddAccessorie />} />
               <Route path="/edit-accessorie/:id" element={<EditAccessorie />} />
             </Route>

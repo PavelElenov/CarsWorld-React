@@ -1,5 +1,5 @@
 import { useContext, Fragment } from "react";
-import { Outlet, Navigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { UserContext } from "../../contexts/UserContext";
 import Unauthorized from "../Unauthorized";
 
@@ -8,7 +8,7 @@ const IsAdmin = () => {
 
     return (
         <Fragment>
-            {user.IsAdmin ? <Outlet /> : <Unauthorized />}
+            {user ? user.isAdmin ? <Outlet /> : <Unauthorized /> : <Unauthorized/>}
         </Fragment>
     );
 };

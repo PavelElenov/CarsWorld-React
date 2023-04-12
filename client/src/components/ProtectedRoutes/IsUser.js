@@ -4,6 +4,7 @@ import { UserContext } from "../../contexts/UserContext";
 
 const IsUser = () => {
     const { user } = useContext(UserContext);
+    console.log("I am in IsUser");
 
     return (
         <Fragment>
