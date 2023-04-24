@@ -14,6 +14,7 @@
  You can store all data for cars and accessories when you uncomment addAllItems function in index.js in server folder.
  
  <h1>Front-End Server</h1>
+ 
  - if you are not logged in you can see a little information for cars and accessories.
  - if you are logged in you will see button details for car and button buy for accessorie.
  - if you are admin you can add, edit and delete cars and accessories.
