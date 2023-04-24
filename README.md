@@ -9,3 +9,6 @@
 <h1>Back-End Server</h2>
  <h2>CRUD Opperations</h2>
  Supported requests - GET, POST, DELETE, PUT, PATCH
+ <h2>Store data</h2>
+ Data for cars and accessories is in json files.
+ You can store all data for cars and accessories when you uncomment addAllItems function in index.js in server folder.
