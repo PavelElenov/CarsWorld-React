@@ -20,4 +20,4 @@
  - if you are admin you can add, edit and delete cars and accessories.
  
  When you store all data in db will have 3 users.The password is from 1 to 4 for all users.
- The admin is pavelelenov@gmail.com.
+ The admin is with email - pavelelenov@gmail.com.
